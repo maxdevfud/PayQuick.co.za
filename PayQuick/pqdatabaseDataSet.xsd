@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="pqdatabaseDataSet" targetNamespace="http://tempuri.org/pqdatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/pqdatabaseDataSet.xsd" xmlns="http://tempuri.org/pqdatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pqdatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pqdatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PayQuick.Properties.Settings.GlobalReference.Default.pqdatabaseConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="employeeTableAdapter" GeneratorDataComponentClassName="employeeTableAdapter" Name="employee" UserDataComponentName="employeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pqdatabaseConnectionString (Settings)" DbObjectName="pqdatabase.employee" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `lastname`, `firstname`, `identity_no`, `pay_id`, `occupation`, `appointed_date`, `tax_id`, `status`, `basic_salary_tmp`, `other_earnings1_value_tmp`, `other_earnings1_descr_tmp`, `paye_tmp`, `uif_tmp`, `providend_tmp`, `other_deduction1_value_tmp`, `other_deduction1_descr_tmp`, `gross_pay_tmp`, `total_deduction_tmp`, `net_pay_tmp`, `pay_date_tmp`, `basic_salary_jan`, `other_earnings1_value_jan`, `other_earnings1_descr_jan`, `paye_jan`, `uif_jan`, `providend_jan`, `other_deduction1_value_jan`, `other_deduction1_descr_jan`, `gross_pay_jan`, `total_deduction_jan`, `net_pay_jan`, `pay_date_jan`, `basic_salary_feb`, `other_earnings1_value_feb`, `other_earnings1_descr_feb`, `paye_feb`, `uif_feb`, `providend_feb`, `other_deduction1_value_feb`, `other_deduction1_descr_feb`, `gross_pay_feb`, `total_deduction_feb`, `net_pay_feb`, `pay_date_feb`, `basic_salary_mar`, `other_earnings1_value_mar`, `other_earnings1_descr_mar`, `paye_mar`, `uif_mar`, `providend_mar`, `other_deduction1_value_mar`, `other_deduction1_descr_mar`, `gross_pay_mar`, `total_deduction_mar`, `net_pay_mar`, `pay_date_mar`, `basic_salary_apr`, `other_earnings1_value_apr`, `other_earnings1_descr_apr`, `paye_apr`, `uif_apr`, `providend_apr`, `other_deduction1_value_apr`, `other_deduction1_descr_apr`, `gross_pay_apr`, `total_deduction_apr`, `net_pay_apr`, `pay_date_apr`, `basic_salary_may`, `other_earnings1_value_may`, `other_earnings1_descr_may`, `paye_may`, `uif_may`, `providend_may`, `other_deduction1_value_may`, `other_deduction1_descr_may`, `gross_pay_may`, `total_deduction_may`, `net_pay_may`, `pay_date_may`, `basic_salary_jun`, `other_earnings1_value_jun`, `other_earnings1_descr_jun`, `paye_jun`, `uif_jun`, `providend_jun`, `other_deduction1_value_jun`, `other_deduction1_descr_jun`, `gross_pay_jun`, `total_deduction_jun`, `net_pay_jun`, `pay_date_jun`, `basic_salary_jul`, `other_earnings1_value_jul`, `other_earnings1_descr_jul`, `paye_jul`, `uif_jul`, `providend_jul`, `other_deduction1_value_jul`, `other_deduction1_descr_jul`, `gross_pay_jul`, `total_deduction_jul`, `net_pay_jul`, `pay_date_jul`, `basic_salary_aug`, `other_earnings1_value_aug`, `other_earnings1_descr_aug`, `paye_aug`, `uif_aug`, `providend_aug`, `other_deduction1_value_aug`, `other_deduction1_descr_aug`, `gross_pay_aug`, `total_deduction_aug`, `net_pay_aug`, `pay_date_aug`, `basic_salary_sep`, `other_earnings1_value_sep`, `other_earnings1_descr_sep`, `paye_sep`, `uif_sep`, `providend_sep`, `other_deduction1_value_sep`, `other_deduction1_descr_sep`, `gross_pay_sep`, `total_deduction_sep`, `net_pay_sep`, `pay_date_sep`, `basic_salary_oct`, `other_earnings1_value_oct`, `other_earnings1_descr_oct`, `paye_oct`, `uif_oct`, `providend_oct`, `other_deduction1_value_oct`, `other_deduction1_descr_oct`, `gross_pay_oct`, `total_deduction_oct`, `net_pay_oct`, `pay_date_oct`, `basic_salary_nov`, `other_earnings1_value_nov`, `other_earnings1_descr_nov`, `paye_nov`, `uif_nov`, `providend_nov`, `other_deduction1_value_nov`, `other_deduction1_descr_nov`, `gross_pay_nov`, `total_deduction_nov`, `net_pay_nov`, `pay_date_nov`, `basic_salary_dec`, `other_earnings1_value_dec`, `other_earnings1_descr_dec`, `paye_dec`, `uif_dec`, `providend_dec`, `other_deduction1_value_dec`, `other_deduction1_descr_dec`, `gross_pay_dec`, `total_deduction_dec`, `net_pay_dec`, `pay_date_dec`, `basic_salary_xtr`, `other_earnings1_value_xtr`, `other_earnings1_descr_xtr`, `paye_xtr`, `uif_xtr`, `providend_xtr`, `other_deduction1_value_xtr`, `other_deduction1_descr_xtr`, `gross_pay_xtr`, `total_deduction_xtr`, `net_pay_xtr`, `pay_date_xtr` FROM `employee`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="employerTableAdapter" GeneratorDataComponentClassName="employerTableAdapter" Name="employer" UserDataComponentName="employerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pqdatabaseConnectionString (Settings)" DbObjectName="pqdatabase.employer" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `name`, `addr1`, `addr2`, `addr3`, `addr4`, `paye_id`, `uif_id`, `sdl_id`, `currentstart`, `currentend`, `database_path`, `tel`, `email`, `contact`, `paydate`, `paymonth` FROM `employer`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="optionsTableAdapter" GeneratorDataComponentClassName="optionsTableAdapter" Name="options" UserDataComponentName="optionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pqdatabaseConnectionString (Settings)" DbObjectName="pqdatabase.options" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `current_month`, `pay_date`, `tax_year_start`, `tax_year_end`, `pay_cycle`, `days_per_cycle`, `hours_per_cycle`, `pay_week_ending`, `annualised_tax`, `shifts_per_year`, `stamps_per_cycle` FROM `options`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="payetablesTableAdapter" GeneratorDataComponentClassName="payetablesTableAdapter" Name="payetables" UserDataComponentName="payetablesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pqdatabaseConnectionString (Settings)" DbObjectName="pqdatabase.payetables" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `paye-name`, `tax-year`, `date-applyfrom`, `threshold1-start`, `threshold1-end`, `threshold2-start`, `threshold2-end`, `threshold3-start`, `threshold3-end`, `threshold4-start`, `threshold4-end`, `threshold5-start`, `threshold5-end`, `threshold6-start`, `rebate64`, `rebate65-74`, `rebate75`, `taxthreshold64`, `taxthreshold65-74`, `taxthreshold75`, `medaid-principal`, `medaid-firstdep`, `medaid-subsdep`, `calc1-base`, `calc1-rate`, `calc1-threshold`, `calc2-base`, `calc2-rate`, `calc2-threshold`, `calc3-base`, `calc3-rate`, `calc3-threshold`, `calc4-base`, `calc4-rate`, `calc4-threshold`, `calc5-base`, `calc5-rate`, `calc5-threshold`, `calc6-base`, `calc6-rate`, `calc6-threshold` FROM `payetables`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="payrollTableAdapter" GeneratorDataComponentClassName="payrollTableAdapter" Name="payroll" UserDataComponentName="payrollTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pqdatabaseConnectionString (Settings)" DbObjectName="pqdatabase.payroll" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ID`, `lastname`, `firstname`, `identity_no`, `pay_id`, `occupation`, `appointed_date`, `tax_id`, `status`, `basic_salary`, `other_earnings1_value`, `other_earnings1_descr`, `paye`, `uif`, `providend`, `other_deduction1_value`, `other_deduction1_descr`, `gross_pay`, `total_deduction`, `net_pay`, `pay_date`, `empID` FROM `payroll`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="pqdatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pqdatabaseDataSet" msprop:Generator_UserDSName="pqdatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="employee" msprop:Generator_TableClassName="employeeDataTable" msprop:Generator_TableVarName="tableemployee" msprop:Generator_TablePropName="employee" msprop:Generator_RowDeletingName="employeeRowDeleting" msprop:Generator_RowChangingName="employeeRowChanging" msprop:Generator_RowEvHandlerName="employeeRowChangeEventHandler" msprop:Generator_RowDeletedName="employeeRowDeleted" msprop:Generator_UserTableName="employee" msprop:Generator_RowChangedName="employeeRowChanged" msprop:Generator_RowEvArgName="employeeRowChangeEvent" msprop:Generator_RowClassName="employeeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="employer" msprop:Generator_TableClassName="employerDataTable" msprop:Generator_TableVarName="tableemployer" msprop:Generator_TablePropName="employer" msprop:Generator_RowDeletingName="employerRowDeleting" msprop:Generator_RowChangingName="employerRowChanging" msprop:Generator_RowEvHandlerName="employerRowChangeEventHandler" msprop:Generator_RowDeletedName="employerRowDeleted" msprop:Generator_UserTableName="employer" msprop:Generator_RowChangedName="employerRowChanged" msprop:Generator_RowEvArgName="employerRowChangeEvent" msprop:Generator_RowClassName="employerRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="options" msprop:Generator_TableClassName="optionsDataTable" msprop:Generator_TableVarName="tableoptions" msprop:Generator_TablePropName="options" msprop:Generator_RowDeletingName="optionsRowDeleting" msprop:Generator_RowChangingName="optionsRowChanging" msprop:Generator_RowEvHandlerName="optionsRowChangeEventHandler" msprop:Generator_RowDeletedName="optionsRowDeleted" msprop:Generator_UserTableName="options" msprop:Generator_RowChangedName="optionsRowChanged" msprop:Generator_RowEvArgName="optionsRowChangeEvent" msprop:Generator_RowClassName="optionsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="payetables" msprop:Generator_TableClassName="payetablesDataTable" msprop:Generator_TableVarName="tablepayetables" msprop:Generator_TablePropName="payetables" msprop:Generator_RowDeletingName="payetablesRowDeleting" msprop:Generator_RowChangingName="payetablesRowChanging" msprop:Generator_RowEvHandlerName="payetablesRowChangeEventHandler" msprop:Generator_RowDeletedName="payetablesRowDeleted" msprop:Generator_UserTableName="payetables" msprop:Generator_RowChangedName="payetablesRowChanged" msprop:Generator_RowEvArgName="payetablesRowChangeEvent" msprop:Generator_RowClassName="payetablesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="payroll" msprop:Generator_TableClassName="payrollDataTable" msprop:Generator_TableVarName="tablepayroll" msprop:Generator_TablePropName="payroll" msprop:Generator_RowDeletingName="payrollRowDeleting" msprop:Generator_RowChangingName="payrollRowChanging" msprop:Generator_RowEvHandlerName="payrollRowChangeEventHandler" msprop:Generator_RowDeletedName="payrollRowDeleted" msprop:Generator_UserTableName="payroll" msprop:Generator_RowChangedName="payrollRowChanged" msprop:Generator_RowEvArgName="payrollRowChangeEvent" msprop:Generator_RowClassName="payrollRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

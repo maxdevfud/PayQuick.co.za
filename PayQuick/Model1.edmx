@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="mainModel.Store" Provider="Devart.Data.SQLite" ProviderManifestToken="SQLite, 3.16.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="lastname" Type="varchar" MaxLength="50" />
+          <Property Name="firstname" Type="varchar" MaxLength="50" />
+          <Property Name="identity_no" Type="varchar" MaxLength="50" />
+          <Property Name="pay_id" Type="varchar" MaxLength="50" />
+          <Property Name="occupation" Type="varchar" MaxLength="50" />
+          <Property Name="appointed_date" Type="date" />
+          <Property Name="tax_id" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+          <Property Name="basic_salary_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_tmp" Type="varchar" MaxLength="50" />
+          <Property Name="paye_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_tmp" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_tmp" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_tmp" Type="date" />
+          <Property Name="basic_salary_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_jan" Type="varchar" MaxLength="50" />
+          <Property Name="paye_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_jan" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_jan" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_jan" Type="date" />
+          <Property Name="basic_salary_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_feb" Type="varchar" MaxLength="50" />
+          <Property Name="paye_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_feb" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_feb" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_feb" Type="date" />
+          <Property Name="basic_salary_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_mar" Type="varchar" MaxLength="50" />
+          <Property Name="paye_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_mar" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_mar" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_mar" Type="date" />
+          <Property Name="basic_salary_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_apr" Type="varchar" MaxLength="50" />
+          <Property Name="paye_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_apr" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_apr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_apr" Type="date" />
+          <Property Name="basic_salary_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_may" Type="varchar" MaxLength="50" />
+          <Property Name="paye_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_may" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_may" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_may" Type="date" />
+          <Property Name="basic_salary_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_jun" Type="varchar" MaxLength="50" />
+          <Property Name="paye_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_jun" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_jun" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_jun" Type="date" />
+          <Property Name="basic_salary_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_jul" Type="varchar" MaxLength="50" />
+          <Property Name="paye_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_jul" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_jul" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_jul" Type="date" />
+          <Property Name="basic_salary_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_aug" Type="varchar" MaxLength="50" />
+          <Property Name="paye_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_aug" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_aug" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_aug" Type="date" />
+          <Property Name="basic_salary_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_sep" Type="varchar" MaxLength="50" />
+          <Property Name="paye_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_sep" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_sep" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_sep" Type="date" />
+          <Property Name="basic_salary_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_oct" Type="varchar" MaxLength="50" />
+          <Property Name="paye_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_oct" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_oct" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_oct" Type="date" />
+          <Property Name="basic_salary_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_nov" Type="varchar" MaxLength="50" />
+          <Property Name="paye_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_nov" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_nov" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_nov" Type="date" />
+          <Property Name="basic_salary_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_dec" Type="varchar" MaxLength="50" />
+          <Property Name="paye_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_dec" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_dec" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_dec" Type="date" />
+          <Property Name="basic_salary_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_xtr" Type="varchar" MaxLength="50" />
+          <Property Name="paye_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_xtr" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay_xtr" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date_xtr" Type="date" />
+        </EntityType>
+        <EntityType Name="Payroll">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="lastname" Type="varchar" MaxLength="50" />
+          <Property Name="firstname" Type="varchar" MaxLength="50" />
+          <Property Name="identity_no" Type="varchar" MaxLength="50" />
+          <Property Name="pay_id" Type="varchar" MaxLength="50" />
+          <Property Name="occupation" Type="varchar" MaxLength="50" />
+          <Property Name="appointed_date" Type="date" />
+          <Property Name="tax_id" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+          <Property Name="basic_salary" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr" Type="varchar" MaxLength="50" />
+          <Property Name="paye" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="uif" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="providend" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="total_deduction" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="net_pay" Type="numeric" Precision="29" Scale="2" />
+          <Property Name="pay_date" Type="date" />
+        </EntityType>
+        <EntityContainer Name="mainModelStoreContainer">
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="main" store:Type="Tables" />
+          <EntitySet Name="Payroll" EntityType="Self.Payroll" Schema="main" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="mainModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="identity_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="pay_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="appointed_date" Type="DateTime" />
+          <Property Name="tax_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="basic_salary_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_tmp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_tmp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_tmp" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_tmp" Type="DateTime" />
+          <Property Name="basic_salary_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_jan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_jan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_jan" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_jan" Type="DateTime" />
+          <Property Name="basic_salary_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_feb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_feb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_feb" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_feb" Type="DateTime" />
+          <Property Name="basic_salary_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_mar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_mar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_mar" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_mar" Type="DateTime" />
+          <Property Name="basic_salary_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_apr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_apr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_apr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_apr" Type="DateTime" />
+          <Property Name="basic_salary_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_may" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_may" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_may" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_may" Type="DateTime" />
+          <Property Name="basic_salary_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_jun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_jun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_jun" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_jun" Type="DateTime" />
+          <Property Name="basic_salary_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_jul" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_jul" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_jul" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_jul" Type="DateTime" />
+          <Property Name="basic_salary_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_aug" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_aug" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_aug" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_aug" Type="DateTime" />
+          <Property Name="basic_salary_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_sep" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_sep" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_sep" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_sep" Type="DateTime" />
+          <Property Name="basic_salary_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_oct" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_oct" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_oct" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_oct" Type="DateTime" />
+          <Property Name="basic_salary_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_nov" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_nov" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_nov" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_nov" Type="DateTime" />
+          <Property Name="basic_salary_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_dec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_dec" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_dec" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_dec" Type="DateTime" />
+          <Property Name="basic_salary_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr_xtr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr_xtr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay_xtr" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date_xtr" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="Payroll">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="identity_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="pay_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="appointed_date" Type="DateTime" />
+          <Property Name="tax_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="basic_salary" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_value" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_earnings1_descr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="paye" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="uif" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="providend" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_value" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="other_deduction1_descr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="gross_pay" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="total_deduction" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="net_pay" Type="Decimal" Precision="29" Scale="2" />
+          <Property Name="pay_date" Type="DateTime" />
+        </EntityType>
+        <EntityContainer Name="mainEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Payrolls" EntityType="Self.Payroll" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="mainModelStoreContainer" CdmEntityContainer="mainEntities">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="mainModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="firstname" ColumnName="firstname" />
+                <ScalarProperty Name="identity_no" ColumnName="identity_no" />
+                <ScalarProperty Name="pay_id" ColumnName="pay_id" />
+                <ScalarProperty Name="occupation" ColumnName="occupation" />
+                <ScalarProperty Name="appointed_date" ColumnName="appointed_date" />
+                <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="basic_salary_tmp" ColumnName="basic_salary_tmp" />
+                <ScalarProperty Name="other_earnings1_value_tmp" ColumnName="other_earnings1_value_tmp" />
+                <ScalarProperty Name="other_earnings1_descr_tmp" ColumnName="other_earnings1_descr_tmp" />
+                <ScalarProperty Name="paye_tmp" ColumnName="paye_tmp" />
+                <ScalarProperty Name="uif_tmp" ColumnName="uif_tmp" />
+                <ScalarProperty Name="providend_tmp" ColumnName="providend_tmp" />
+                <ScalarProperty Name="other_deduction1_value_tmp" ColumnName="other_deduction1_value_tmp" />
+                <ScalarProperty Name="other_deduction1_descr_tmp" ColumnName="other_deduction1_descr_tmp" />
+                <ScalarProperty Name="gross_pay_tmp" ColumnName="gross_pay_tmp" />
+                <ScalarProperty Name="total_deduction_tmp" ColumnName="total_deduction_tmp" />
+                <ScalarProperty Name="net_pay_tmp" ColumnName="net_pay_tmp" />
+                <ScalarProperty Name="pay_date_tmp" ColumnName="pay_date_tmp" />
+                <ScalarProperty Name="basic_salary_jan" ColumnName="basic_salary_jan" />
+                <ScalarProperty Name="other_earnings1_value_jan" ColumnName="other_earnings1_value_jan" />
+                <ScalarProperty Name="other_earnings1_descr_jan" ColumnName="other_earnings1_descr_jan" />
+                <ScalarProperty Name="paye_jan" ColumnName="paye_jan" />
+                <ScalarProperty Name="uif_jan" ColumnName="uif_jan" />
+                <ScalarProperty Name="providend_jan" ColumnName="providend_jan" />
+                <ScalarProperty Name="other_deduction1_value_jan" ColumnName="other_deduction1_value_jan" />
+                <ScalarProperty Name="other_deduction1_descr_jan" ColumnName="other_deduction1_descr_jan" />
+                <ScalarProperty Name="gross_pay_jan" ColumnName="gross_pay_jan" />
+                <ScalarProperty Name="total_deduction_jan" ColumnName="total_deduction_jan" />
+                <ScalarProperty Name="net_pay_jan" ColumnName="net_pay_jan" />
+                <ScalarProperty Name="pay_date_jan" ColumnName="pay_date_jan" />
+                <ScalarProperty Name="basic_salary_feb" ColumnName="basic_salary_feb" />
+                <ScalarProperty Name="other_earnings1_value_feb" ColumnName="other_earnings1_value_feb" />
+                <ScalarProperty Name="other_earnings1_descr_feb" ColumnName="other_earnings1_descr_feb" />
+                <ScalarProperty Name="paye_feb" ColumnName="paye_feb" />
+                <ScalarProperty Name="uif_feb" ColumnName="uif_feb" />
+                <ScalarProperty Name="providend_feb" ColumnName="providend_feb" />
+                <ScalarProperty Name="other_deduction1_value_feb" ColumnName="other_deduction1_value_feb" />
+                <ScalarProperty Name="other_deduction1_descr_feb" ColumnName="other_deduction1_descr_feb" />
+                <ScalarProperty Name="gross_pay_feb" ColumnName="gross_pay_feb" />
+                <ScalarProperty Name="total_deduction_feb" ColumnName="total_deduction_feb" />
+                <ScalarProperty Name="net_pay_feb" ColumnName="net_pay_feb" />
+                <ScalarProperty Name="pay_date_feb" ColumnName="pay_date_feb" />
+                <ScalarProperty Name="basic_salary_mar" ColumnName="basic_salary_mar" />
+                <ScalarProperty Name="other_earnings1_value_mar" ColumnName="other_earnings1_value_mar" />
+                <ScalarProperty Name="other_earnings1_descr_mar" ColumnName="other_earnings1_descr_mar" />
+                <ScalarProperty Name="paye_mar" ColumnName="paye_mar" />
+                <ScalarProperty Name="uif_mar" ColumnName="uif_mar" />
+                <ScalarProperty Name="providend_mar" ColumnName="providend_mar" />
+                <ScalarProperty Name="other_deduction1_value_mar" ColumnName="other_deduction1_value_mar" />
+                <ScalarProperty Name="other_deduction1_descr_mar" ColumnName="other_deduction1_descr_mar" />
+                <ScalarProperty Name="gross_pay_mar" ColumnName="gross_pay_mar" />
+                <ScalarProperty Name="total_deduction_mar" ColumnName="total_deduction_mar" />
+                <ScalarProperty Name="net_pay_mar" ColumnName="net_pay_mar" />
+                <ScalarProperty Name="pay_date_mar" ColumnName="pay_date_mar" />
+                <ScalarProperty Name="basic_salary_apr" ColumnName="basic_salary_apr" />
+                <ScalarProperty Name="other_earnings1_value_apr" ColumnName="other_earnings1_value_apr" />
+                <ScalarProperty Name="other_earnings1_descr_apr" ColumnName="other_earnings1_descr_apr" />
+                <ScalarProperty Name="paye_apr" ColumnName="paye_apr" />
+                <ScalarProperty Name="uif_apr" ColumnName="uif_apr" />
+                <ScalarProperty Name="providend_apr" ColumnName="providend_apr" />
+                <ScalarProperty Name="other_deduction1_value_apr" ColumnName="other_deduction1_value_apr" />
+                <ScalarProperty Name="other_deduction1_descr_apr" ColumnName="other_deduction1_descr_apr" />
+                <ScalarProperty Name="gross_pay_apr" ColumnName="gross_pay_apr" />
+                <ScalarProperty Name="total_deduction_apr" ColumnName="total_deduction_apr" />
+                <ScalarProperty Name="net_pay_apr" ColumnName="net_pay_apr" />
+                <ScalarProperty Name="pay_date_apr" ColumnName="pay_date_apr" />
+                <ScalarProperty Name="basic_salary_may" ColumnName="basic_salary_may" />
+                <ScalarProperty Name="other_earnings1_value_may" ColumnName="other_earnings1_value_may" />
+                <ScalarProperty Name="other_earnings1_descr_may" ColumnName="other_earnings1_descr_may" />
+                <ScalarProperty Name="paye_may" ColumnName="paye_may" />
+                <ScalarProperty Name="uif_may" ColumnName="uif_may" />
+                <ScalarProperty Name="providend_may" ColumnName="providend_may" />
+                <ScalarProperty Name="other_deduction1_value_may" ColumnName="other_deduction1_value_may" />
+                <ScalarProperty Name="other_deduction1_descr_may" ColumnName="other_deduction1_descr_may" />
+                <ScalarProperty Name="gross_pay_may" ColumnName="gross_pay_may" />
+                <ScalarProperty Name="total_deduction_may" ColumnName="total_deduction_may" />
+                <ScalarProperty Name="net_pay_may" ColumnName="net_pay_may" />
+                <ScalarProperty Name="pay_date_may" ColumnName="pay_date_may" />
+                <ScalarProperty Name="basic_salary_jun" ColumnName="basic_salary_jun" />
+                <ScalarProperty Name="other_earnings1_value_jun" ColumnName="other_earnings1_value_jun" />
+                <ScalarProperty Name="other_earnings1_descr_jun" ColumnName="other_earnings1_descr_jun" />
+                <ScalarProperty Name="paye_jun" ColumnName="paye_jun" />
+                <ScalarProperty Name="uif_jun" ColumnName="uif_jun" />
+                <ScalarProperty Name="providend_jun" ColumnName="providend_jun" />
+                <ScalarProperty Name="other_deduction1_value_jun" ColumnName="other_deduction1_value_jun" />
+                <ScalarProperty Name="other_deduction1_descr_jun" ColumnName="other_deduction1_descr_jun" />
+                <ScalarProperty Name="gross_pay_jun" ColumnName="gross_pay_jun" />
+                <ScalarProperty Name="total_deduction_jun" ColumnName="total_deduction_jun" />
+                <ScalarProperty Name="net_pay_jun" ColumnName="net_pay_jun" />
+                <ScalarProperty Name="pay_date_jun" ColumnName="pay_date_jun" />
+                <ScalarProperty Name="basic_salary_jul" ColumnName="basic_salary_jul" />
+                <ScalarProperty Name="other_earnings1_value_jul" ColumnName="other_earnings1_value_jul" />
+                <ScalarProperty Name="other_earnings1_descr_jul" ColumnName="other_earnings1_descr_jul" />
+                <ScalarProperty Name="paye_jul" ColumnName="paye_jul" />
+                <ScalarProperty Name="uif_jul" ColumnName="uif_jul" />
+                <ScalarProperty Name="providend_jul" ColumnName="providend_jul" />
+                <ScalarProperty Name="other_deduction1_value_jul" ColumnName="other_deduction1_value_jul" />
+                <ScalarProperty Name="other_deduction1_descr_jul" ColumnName="other_deduction1_descr_jul" />
+                <ScalarProperty Name="gross_pay_jul" ColumnName="gross_pay_jul" />
+                <ScalarProperty Name="total_deduction_jul" ColumnName="total_deduction_jul" />
+                <ScalarProperty Name="net_pay_jul" ColumnName="net_pay_jul" />
+                <ScalarProperty Name="pay_date_jul" ColumnName="pay_date_jul" />
+                <ScalarProperty Name="basic_salary_aug" ColumnName="basic_salary_aug" />
+                <ScalarProperty Name="other_earnings1_value_aug" ColumnName="other_earnings1_value_aug" />
+                <ScalarProperty Name="other_earnings1_descr_aug" ColumnName="other_earnings1_descr_aug" />
+                <ScalarProperty Name="paye_aug" ColumnName="paye_aug" />
+                <ScalarProperty Name="uif_aug" ColumnName="uif_aug" />
+                <ScalarProperty Name="providend_aug" ColumnName="providend_aug" />
+                <ScalarProperty Name="other_deduction1_value_aug" ColumnName="other_deduction1_value_aug" />
+                <ScalarProperty Name="other_deduction1_descr_aug" ColumnName="other_deduction1_descr_aug" />
+                <ScalarProperty Name="gross_pay_aug" ColumnName="gross_pay_aug" />
+                <ScalarProperty Name="total_deduction_aug" ColumnName="total_deduction_aug" />
+                <ScalarProperty Name="net_pay_aug" ColumnName="net_pay_aug" />
+                <ScalarProperty Name="pay_date_aug" ColumnName="pay_date_aug" />
+                <ScalarProperty Name="basic_salary_sep" ColumnName="basic_salary_sep" />
+                <ScalarProperty Name="other_earnings1_value_sep" ColumnName="other_earnings1_value_sep" />
+                <ScalarProperty Name="other_earnings1_descr_sep" ColumnName="other_earnings1_descr_sep" />
+                <ScalarProperty Name="paye_sep" ColumnName="paye_sep" />
+                <ScalarProperty Name="uif_sep" ColumnName="uif_sep" />
+                <ScalarProperty Name="providend_sep" ColumnName="providend_sep" />
+                <ScalarProperty Name="other_deduction1_value_sep" ColumnName="other_deduction1_value_sep" />
+                <ScalarProperty Name="other_deduction1_descr_sep" ColumnName="other_deduction1_descr_sep" />
+                <ScalarProperty Name="gross_pay_sep" ColumnName="gross_pay_sep" />
+                <ScalarProperty Name="total_deduction_sep" ColumnName="total_deduction_sep" />
+                <ScalarProperty Name="net_pay_sep" ColumnName="net_pay_sep" />
+                <ScalarProperty Name="pay_date_sep" ColumnName="pay_date_sep" />
+                <ScalarProperty Name="basic_salary_oct" ColumnName="basic_salary_oct" />
+                <ScalarProperty Name="other_earnings1_value_oct" ColumnName="other_earnings1_value_oct" />
+                <ScalarProperty Name="other_earnings1_descr_oct" ColumnName="other_earnings1_descr_oct" />
+                <ScalarProperty Name="paye_oct" ColumnName="paye_oct" />
+                <ScalarProperty Name="uif_oct" ColumnName="uif_oct" />
+                <ScalarProperty Name="providend_oct" ColumnName="providend_oct" />
+                <ScalarProperty Name="other_deduction1_value_oct" ColumnName="other_deduction1_value_oct" />
+                <ScalarProperty Name="other_deduction1_descr_oct" ColumnName="other_deduction1_descr_oct" />
+                <ScalarProperty Name="gross_pay_oct" ColumnName="gross_pay_oct" />
+                <ScalarProperty Name="total_deduction_oct" ColumnName="total_deduction_oct" />
+                <ScalarProperty Name="net_pay_oct" ColumnName="net_pay_oct" />
+                <ScalarProperty Name="pay_date_oct" ColumnName="pay_date_oct" />
+                <ScalarProperty Name="basic_salary_nov" ColumnName="basic_salary_nov" />
+                <ScalarProperty Name="other_earnings1_value_nov" ColumnName="other_earnings1_value_nov" />
+                <ScalarProperty Name="other_earnings1_descr_nov" ColumnName="other_earnings1_descr_nov" />
+                <ScalarProperty Name="paye_nov" ColumnName="paye_nov" />
+                <ScalarProperty Name="uif_nov" ColumnName="uif_nov" />
+                <ScalarProperty Name="providend_nov" ColumnName="providend_nov" />
+                <ScalarProperty Name="other_deduction1_value_nov" ColumnName="other_deduction1_value_nov" />
+                <ScalarProperty Name="other_deduction1_descr_nov" ColumnName="other_deduction1_descr_nov" />
+                <ScalarProperty Name="gross_pay_nov" ColumnName="gross_pay_nov" />
+                <ScalarProperty Name="total_deduction_nov" ColumnName="total_deduction_nov" />
+                <ScalarProperty Name="net_pay_nov" ColumnName="net_pay_nov" />
+                <ScalarProperty Name="pay_date_nov" ColumnName="pay_date_nov" />
+                <ScalarProperty Name="basic_salary_dec" ColumnName="basic_salary_dec" />
+                <ScalarProperty Name="other_earnings1_value_dec" ColumnName="other_earnings1_value_dec" />
+                <ScalarProperty Name="other_earnings1_descr_dec" ColumnName="other_earnings1_descr_dec" />
+                <ScalarProperty Name="paye_dec" ColumnName="paye_dec" />
+                <ScalarProperty Name="uif_dec" ColumnName="uif_dec" />
+                <ScalarProperty Name="providend_dec" ColumnName="providend_dec" />
+                <ScalarProperty Name="other_deduction1_value_dec" ColumnName="other_deduction1_value_dec" />
+                <ScalarProperty Name="other_deduction1_descr_dec" ColumnName="other_deduction1_descr_dec" />
+                <ScalarProperty Name="gross_pay_dec" ColumnName="gross_pay_dec" />
+                <ScalarProperty Name="total_deduction_dec" ColumnName="total_deduction_dec" />
+                <ScalarProperty Name="net_pay_dec" ColumnName="net_pay_dec" />
+                <ScalarProperty Name="pay_date_dec" ColumnName="pay_date_dec" />
+                <ScalarProperty Name="basic_salary_xtr" ColumnName="basic_salary_xtr" />
+                <ScalarProperty Name="other_earnings1_value_xtr" ColumnName="other_earnings1_value_xtr" />
+                <ScalarProperty Name="other_earnings1_descr_xtr" ColumnName="other_earnings1_descr_xtr" />
+                <ScalarProperty Name="paye_xtr" ColumnName="paye_xtr" />
+                <ScalarProperty Name="uif_xtr" ColumnName="uif_xtr" />
+                <ScalarProperty Name="providend_xtr" ColumnName="providend_xtr" />
+                <ScalarProperty Name="other_deduction1_value_xtr" ColumnName="other_deduction1_value_xtr" />
+                <ScalarProperty Name="other_deduction1_descr_xtr" ColumnName="other_deduction1_descr_xtr" />
+                <ScalarProperty Name="gross_pay_xtr" ColumnName="gross_pay_xtr" />
+                <ScalarProperty Name="total_deduction_xtr" ColumnName="total_deduction_xtr" />
+                <ScalarProperty Name="net_pay_xtr" ColumnName="net_pay_xtr" />
+                <ScalarProperty Name="pay_date_xtr" ColumnName="pay_date_xtr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Payrolls">
+            <EntityTypeMapping TypeName="mainModel.Payroll">
+              <MappingFragment StoreEntitySet="Payroll">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="firstname" ColumnName="firstname" />
+                <ScalarProperty Name="identity_no" ColumnName="identity_no" />
+                <ScalarProperty Name="pay_id" ColumnName="pay_id" />
+                <ScalarProperty Name="occupation" ColumnName="occupation" />
+                <ScalarProperty Name="appointed_date" ColumnName="appointed_date" />
+                <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="basic_salary" ColumnName="basic_salary" />
+                <ScalarProperty Name="other_earnings1_value" ColumnName="other_earnings1_value" />
+                <ScalarProperty Name="other_earnings1_descr" ColumnName="other_earnings1_descr" />
+                <ScalarProperty Name="paye" ColumnName="paye" />
+                <ScalarProperty Name="uif" ColumnName="uif" />
+                <ScalarProperty Name="providend" ColumnName="providend" />
+                <ScalarProperty Name="other_deduction1_value" ColumnName="other_deduction1_value" />
+                <ScalarProperty Name="other_deduction1_descr" ColumnName="other_deduction1_descr" />
+                <ScalarProperty Name="gross_pay" ColumnName="gross_pay" />
+                <ScalarProperty Name="total_deduction" ColumnName="total_deduction" />
+                <ScalarProperty Name="net_pay" ColumnName="net_pay" />
+                <ScalarProperty Name="pay_date" ColumnName="pay_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

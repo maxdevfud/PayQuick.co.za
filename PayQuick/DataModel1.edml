@@ -1,0 +1,941 @@
+﻿<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="mainModel.Store" Alias="Self" Provider="Devart.Data.SQLite" ProviderManifestToken="SQLite, 3.16.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:devart="http://devart.com/schemas/edml/StorageSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="mainEntitiesStoreContainer">
+          <EntitySet Name="Employees" EntityType="mainModel.Store.Employee" store:Type="Tables" Schema="main" Table="Employee" />
+          <EntitySet Name="Payrolls" EntityType="mainModel.Store.Payroll" store:Type="Tables" Schema="main" Table="Payroll" />
+          <EntitySet Name="Employers" EntityType="mainModel.Store.Employer" store:Type="Tables" Schema="main" Table="Employer" />
+          <EntitySet Name="PAYEtables" EntityType="mainModel.Store.PAYEtables" store:Type="Tables" Schema="main" Table="PAYEtables" />
+          <EntitySet Name="Options" EntityType="mainModel.Store.Options" store:Type="Tables" Schema="main" Table="Options" />
+        </EntityContainer>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="lastname" Type="varchar" MaxLength="50" />
+          <Property Name="firstname" Type="varchar" MaxLength="50" />
+          <Property Name="identity_no" Type="varchar" MaxLength="50" />
+          <Property Name="pay_id" Type="varchar" MaxLength="50" />
+          <Property Name="occupation" Type="varchar" MaxLength="50" />
+          <Property Name="appointed_date" Type="date" />
+          <Property Name="tax_id" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+          <Property Name="basic_salary_tmp" Type="numeric" />
+          <Property Name="other_earnings1_value_tmp" Type="numeric" />
+          <Property Name="other_earnings1_descr_tmp" Type="varchar" MaxLength="50" />
+          <Property Name="paye_tmp" Type="numeric" />
+          <Property Name="uif_tmp" Type="numeric" />
+          <Property Name="providend_tmp" Type="numeric" />
+          <Property Name="other_deduction1_value_tmp" Type="numeric" />
+          <Property Name="other_deduction1_descr_tmp" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_tmp" Type="numeric" />
+          <Property Name="total_deduction_tmp" Type="numeric" />
+          <Property Name="net_pay_tmp" Type="numeric" />
+          <Property Name="pay_date_tmp" Type="date" />
+          <Property Name="basic_salary_jan" Type="numeric" />
+          <Property Name="other_earnings1_value_jan" Type="numeric" />
+          <Property Name="other_earnings1_descr_jan" Type="varchar" MaxLength="50" />
+          <Property Name="paye_jan" Type="numeric" />
+          <Property Name="uif_jan" Type="numeric" />
+          <Property Name="providend_jan" Type="numeric" />
+          <Property Name="other_deduction1_value_jan" Type="numeric" />
+          <Property Name="other_deduction1_descr_jan" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_jan" Type="numeric" />
+          <Property Name="total_deduction_jan" Type="numeric" />
+          <Property Name="net_pay_jan" Type="numeric" />
+          <Property Name="pay_date_jan" Type="date" />
+          <Property Name="basic_salary_feb" Type="numeric" />
+          <Property Name="other_earnings1_value_feb" Type="numeric" />
+          <Property Name="other_earnings1_descr_feb" Type="varchar" MaxLength="50" />
+          <Property Name="paye_feb" Type="numeric" />
+          <Property Name="uif_feb" Type="numeric" />
+          <Property Name="providend_feb" Type="numeric" />
+          <Property Name="other_deduction1_value_feb" Type="numeric" />
+          <Property Name="other_deduction1_descr_feb" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_feb" Type="numeric" />
+          <Property Name="total_deduction_feb" Type="numeric" />
+          <Property Name="net_pay_feb" Type="numeric" />
+          <Property Name="pay_date_feb" Type="date" />
+          <Property Name="basic_salary_mar" Type="numeric" />
+          <Property Name="other_earnings1_value_mar" Type="numeric" />
+          <Property Name="other_earnings1_descr_mar" Type="varchar" MaxLength="50" />
+          <Property Name="paye_mar" Type="numeric" />
+          <Property Name="uif_mar" Type="numeric" />
+          <Property Name="providend_mar" Type="numeric" />
+          <Property Name="other_deduction1_value_mar" Type="numeric" />
+          <Property Name="other_deduction1_descr_mar" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_mar" Type="numeric" />
+          <Property Name="total_deduction_mar" Type="numeric" />
+          <Property Name="net_pay_mar" Type="numeric" />
+          <Property Name="pay_date_mar" Type="date" />
+          <Property Name="basic_salary_apr" Type="numeric" />
+          <Property Name="other_earnings1_value_apr" Type="numeric" />
+          <Property Name="other_earnings1_descr_apr" Type="varchar" MaxLength="50" />
+          <Property Name="paye_apr" Type="numeric" />
+          <Property Name="uif_apr" Type="numeric" />
+          <Property Name="providend_apr" Type="numeric" />
+          <Property Name="other_deduction1_value_apr" Type="numeric" />
+          <Property Name="other_deduction1_descr_apr" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_apr" Type="numeric" />
+          <Property Name="total_deduction_apr" Type="numeric" />
+          <Property Name="net_pay_apr" Type="numeric" />
+          <Property Name="pay_date_apr" Type="date" />
+          <Property Name="basic_salary_may" Type="numeric" />
+          <Property Name="other_earnings1_value_may" Type="numeric" />
+          <Property Name="other_earnings1_descr_may" Type="varchar" MaxLength="50" />
+          <Property Name="paye_may" Type="numeric" />
+          <Property Name="uif_may" Type="numeric" />
+          <Property Name="providend_may" Type="numeric" />
+          <Property Name="other_deduction1_value_may" Type="numeric" />
+          <Property Name="other_deduction1_descr_may" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_may" Type="numeric" />
+          <Property Name="total_deduction_may" Type="numeric" />
+          <Property Name="net_pay_may" Type="numeric" />
+          <Property Name="pay_date_may" Type="date" />
+          <Property Name="basic_salary_jun" Type="numeric" />
+          <Property Name="other_earnings1_value_jun" Type="numeric" />
+          <Property Name="other_earnings1_descr_jun" Type="varchar" MaxLength="50" />
+          <Property Name="paye_jun" Type="numeric" />
+          <Property Name="uif_jun" Type="numeric" />
+          <Property Name="providend_jun" Type="numeric" />
+          <Property Name="other_deduction1_value_jun" Type="numeric" />
+          <Property Name="other_deduction1_descr_jun" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_jun" Type="numeric" />
+          <Property Name="total_deduction_jun" Type="numeric" />
+          <Property Name="net_pay_jun" Type="numeric" />
+          <Property Name="pay_date_jun" Type="date" />
+          <Property Name="basic_salary_jul" Type="numeric" />
+          <Property Name="other_earnings1_value_jul" Type="numeric" />
+          <Property Name="other_earnings1_descr_jul" Type="varchar" MaxLength="50" />
+          <Property Name="paye_jul" Type="numeric" />
+          <Property Name="uif_jul" Type="numeric" />
+          <Property Name="providend_jul" Type="numeric" />
+          <Property Name="other_deduction1_value_jul" Type="numeric" />
+          <Property Name="other_deduction1_descr_jul" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_jul" Type="numeric" />
+          <Property Name="total_deduction_jul" Type="numeric" />
+          <Property Name="net_pay_jul" Type="numeric" />
+          <Property Name="pay_date_jul" Type="date" />
+          <Property Name="basic_salary_aug" Type="numeric" />
+          <Property Name="other_earnings1_value_aug" Type="numeric" />
+          <Property Name="other_earnings1_descr_aug" Type="varchar" MaxLength="50" />
+          <Property Name="paye_aug" Type="numeric" />
+          <Property Name="uif_aug" Type="numeric" />
+          <Property Name="providend_aug" Type="numeric" />
+          <Property Name="other_deduction1_value_aug" Type="numeric" />
+          <Property Name="other_deduction1_descr_aug" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_aug" Type="numeric" />
+          <Property Name="total_deduction_aug" Type="numeric" />
+          <Property Name="net_pay_aug" Type="numeric" />
+          <Property Name="pay_date_aug" Type="date" />
+          <Property Name="basic_salary_sep" Type="numeric" />
+          <Property Name="other_earnings1_value_sep" Type="numeric" />
+          <Property Name="other_earnings1_descr_sep" Type="varchar" MaxLength="50" />
+          <Property Name="paye_sep" Type="numeric" />
+          <Property Name="uif_sep" Type="numeric" />
+          <Property Name="providend_sep" Type="numeric" />
+          <Property Name="other_deduction1_value_sep" Type="numeric" />
+          <Property Name="other_deduction1_descr_sep" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_sep" Type="numeric" />
+          <Property Name="total_deduction_sep" Type="numeric" />
+          <Property Name="net_pay_sep" Type="numeric" />
+          <Property Name="pay_date_sep" Type="date" />
+          <Property Name="basic_salary_oct" Type="numeric" />
+          <Property Name="other_earnings1_value_oct" Type="numeric" />
+          <Property Name="other_earnings1_descr_oct" Type="varchar" MaxLength="50" />
+          <Property Name="paye_oct" Type="numeric" />
+          <Property Name="uif_oct" Type="numeric" />
+          <Property Name="providend_oct" Type="numeric" />
+          <Property Name="other_deduction1_value_oct" Type="numeric" />
+          <Property Name="other_deduction1_descr_oct" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_oct" Type="numeric" />
+          <Property Name="total_deduction_oct" Type="numeric" />
+          <Property Name="net_pay_oct" Type="numeric" />
+          <Property Name="pay_date_oct" Type="date" />
+          <Property Name="basic_salary_nov" Type="numeric" />
+          <Property Name="other_earnings1_value_nov" Type="numeric" />
+          <Property Name="other_earnings1_descr_nov" Type="varchar" MaxLength="50" />
+          <Property Name="paye_nov" Type="numeric" />
+          <Property Name="uif_nov" Type="numeric" />
+          <Property Name="providend_nov" Type="numeric" />
+          <Property Name="other_deduction1_value_nov" Type="numeric" />
+          <Property Name="other_deduction1_descr_nov" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_nov" Type="numeric" />
+          <Property Name="total_deduction_nov" Type="numeric" />
+          <Property Name="net_pay_nov" Type="numeric" />
+          <Property Name="pay_date_nov" Type="date" />
+          <Property Name="basic_salary_dec" Type="numeric" />
+          <Property Name="other_earnings1_value_dec" Type="numeric" />
+          <Property Name="other_earnings1_descr_dec" Type="varchar" MaxLength="50" />
+          <Property Name="paye_dec" Type="numeric" />
+          <Property Name="uif_dec" Type="numeric" />
+          <Property Name="providend_dec" Type="numeric" />
+          <Property Name="other_deduction1_value_dec" Type="numeric" />
+          <Property Name="other_deduction1_descr_dec" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_dec" Type="numeric" />
+          <Property Name="total_deduction_dec" Type="numeric" />
+          <Property Name="net_pay_dec" Type="numeric" />
+          <Property Name="pay_date_dec" Type="date" />
+          <Property Name="basic_salary_xtr" Type="numeric" />
+          <Property Name="other_earnings1_value_xtr" Type="numeric" />
+          <Property Name="other_earnings1_descr_xtr" Type="varchar" MaxLength="50" />
+          <Property Name="paye_xtr" Type="numeric" />
+          <Property Name="uif_xtr" Type="numeric" />
+          <Property Name="providend_xtr" Type="numeric" />
+          <Property Name="other_deduction1_value_xtr" Type="numeric" />
+          <Property Name="other_deduction1_descr_xtr" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay_xtr" Type="numeric" />
+          <Property Name="total_deduction_xtr" Type="numeric" />
+          <Property Name="net_pay_xtr" Type="numeric" />
+          <Property Name="pay_date_xtr" Type="date" />
+        </EntityType>
+        <EntityType Name="Payroll">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="lastname" Type="varchar" MaxLength="50" />
+          <Property Name="firstname" Type="varchar" MaxLength="50" />
+          <Property Name="identity_no" Type="varchar" MaxLength="50" />
+          <Property Name="pay_id" Type="varchar" MaxLength="50" />
+          <Property Name="occupation" Type="varchar" MaxLength="50" />
+          <Property Name="appointed_date" Type="date" />
+          <Property Name="tax_id" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="varchar" MaxLength="50" />
+          <Property Name="basic_salary" Type="numeric" />
+          <Property Name="other_earnings1_value" Type="numeric" />
+          <Property Name="other_earnings1_descr" Type="varchar" MaxLength="50" />
+          <Property Name="paye" Type="numeric" />
+          <Property Name="uif" Type="numeric" />
+          <Property Name="providend" Type="numeric" />
+          <Property Name="other_deduction1_value" Type="numeric" />
+          <Property Name="other_deduction1_descr" Type="varchar" MaxLength="50" />
+          <Property Name="gross_pay" Type="numeric" />
+          <Property Name="total_deduction" Type="numeric" />
+          <Property Name="net_pay" Type="numeric" />
+          <Property Name="pay_date" Type="date" />
+        </EntityType>
+        <EntityType Name="Employer">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="char" MaxLength="100" />
+          <Property Name="addr1" Type="char" MaxLength="50" />
+          <Property Name="addr2" Type="char" MaxLength="50" />
+          <Property Name="addr3" Type="char" MaxLength="50" />
+          <Property Name="addr4" Type="char" MaxLength="50" />
+          <Property Name="paye_id" Type="char" MaxLength="50" />
+          <Property Name="uif_id" Type="char" MaxLength="50" />
+          <Property Name="sdl_id" Type="char" MaxLength="50" />
+          <Property Name="currentstart" Type="date" />
+          <Property Name="currentend" Type="date" />
+          <Property Name="database_path" Type="char" MaxLength="100" />
+          <Property Name="tel" Type="char" MaxLength="50" />
+          <Property Name="email" Type="char" MaxLength="50" />
+          <Property Name="contact" Type="char" MaxLength="50" />
+          <Property Name="paydate" Type="date" />
+          <Property Name="paymonth" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PAYEtables">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="integer" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="paye-name" Type="char" MaxLength="50" />
+          <Property Name="tax-year" Type="char" MaxLength="50" />
+          <Property Name="date-applyfrom" Type="date" />
+          <Property Name="threshold1-start" Type="numeric" />
+          <Property Name="threshold1-end" Type="numeric" />
+          <Property Name="threshold2-start" Type="numeric" />
+          <Property Name="threshold2-end" Type="numeric" />
+          <Property Name="threshold3-start" Type="numeric" />
+          <Property Name="threshold3-end" Type="numeric" />
+          <Property Name="threshold4-start" Type="numeric" />
+          <Property Name="threshold4-end" Type="numeric" />
+          <Property Name="threshold5-start" Type="numeric" />
+          <Property Name="threshold5-end" Type="numeric" />
+          <Property Name="threshold6-start" Type="numeric" />
+          <Property Name="rebate64" Type="numeric" />
+          <Property Name="rebate65-74" Type="numeric" />
+          <Property Name="rebate75" Type="numeric" />
+          <Property Name="taxthreshold64" Type="numeric" />
+          <Property Name="taxthreshold65-74" Type="numeric" />
+          <Property Name="taxthreshold75" Type="numeric" />
+          <Property Name="medaid-principal" Type="numeric" />
+          <Property Name="medaid-firstdep" Type="numeric" />
+          <Property Name="medaid-subsdep" Type="numeric" />
+          <Property Name="calc1-base" Type="numeric" />
+          <Property Name="calc1-rate" Type="numeric" />
+          <Property Name="calc1-threshold" Type="numeric" />
+          <Property Name="calc2-base" Type="numeric" />
+          <Property Name="calc2-rate" Type="numeric" />
+          <Property Name="calc2-threshold" Type="numeric" />
+          <Property Name="calc3-base" Type="numeric" />
+          <Property Name="calc3-rate" Type="numeric" />
+          <Property Name="calc3-threshold" Type="numeric" />
+          <Property Name="calc4-base" Type="numeric" />
+          <Property Name="calc4-rate" Type="numeric" />
+          <Property Name="calc4-threshold" Type="numeric" />
+          <Property Name="calc5-base" Type="numeric" />
+          <Property Name="calc5-rate" Type="numeric" />
+          <Property Name="calc5-threshold" Type="numeric" />
+          <Property Name="calc6-base" Type="numeric" />
+          <Property Name="calc6-rate" Type="numeric" />
+          <Property Name="calc6-threshold" Type="numeric" />
+        </EntityType>
+        <EntityType Name="Options">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int32" Nullable="false" />
+          <Property Name="current_month" Type="varchar" MaxLength="50" />
+          <Property Name="pay_date" Type="date" />
+          <Property Name="tax_year_start" Type="date" />
+          <Property Name="tax_year_end" Type="date" />
+          <Property Name="pay_cycle" Type="varchar" MaxLength="50" />
+          <Property Name="days_per_cycle" Type="integer" />
+          <Property Name="hours_per_cycle" Type="integer" />
+          <Property Name="pay_week_ending" Type="varchar" MaxLength="50" />
+          <Property Name="annualised_tax" Type="varchar" MaxLength="50" />
+          <Property Name="shifts_per_year" Type="integer" />
+          <Property Name="stamps_per_cycle" Type="integer" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="mainModel" Alias="Self" d4p1:ViewGeneration="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:devart="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" annotation:UseStrongSpatialTypes="false" xmlns:d4p1="http://devart.com/schemas/edml/ConceptualSchemaExtensions/1.0" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="mainEntities" annotation:LazyLoadingEnabled="true" ed:Guid="3b360659-2ae8-4530-a263-a78450316aee">
+          <EntitySet Name="Employees" EntityType="mainModel.Employee" />
+          <EntitySet Name="Payrolls" EntityType="mainModel.Payroll" />
+          <EntitySet Name="Employers" EntityType="mainModel.Employer" />
+          <EntitySet Name="PAYEtables" EntityType="mainModel.PAYEtable" />
+          <EntitySet Name="Options" EntityType="mainModel.Options" />
+        </EntityContainer>
+        <EntityType Name="Employee" ed:Guid="fda54a40-973a-4c46-b8a6-61a7bb8f4355">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="cc82c01e-87bf-432a-a3a5-98bc73060ce7" />
+          <Property Name="lastname" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f37a230e-a8b5-43aa-9532-8a5e15a31986" />
+          <Property Name="firstname" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="eae1053b-194b-4e3f-9d21-6d6fb7ec9855" />
+          <Property Name="identity_no" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="a90aea44-350e-445d-b25e-980f46e1c61c" />
+          <Property Name="pay_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="2a2f23e6-fcfe-4a42-8b46-b12b423801af" />
+          <Property Name="occupation" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="48219608-8fdd-45d6-98a4-1ce78376a0fb" />
+          <Property Name="appointed_date" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d6ffe7ce-f4c1-4e68-837a-81680a6bfeba" />
+          <Property Name="tax_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="ba1b3b68-10b4-4638-9030-d347f66fdb5f" />
+          <Property Name="status" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="e1c56e14-9368-4189-b200-98ec0a03cbee" />
+          <Property Name="basic_salary_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="1f4ae346-e96c-4d7b-94f3-7ed6ac32225f" />
+          <Property Name="other_earnings1_value_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="767fe2f2-dddf-4409-ac08-495fd9934733" />
+          <Property Name="other_earnings1_descr_tmp" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="3403ab35-97b8-4f18-b8cf-93f0fc5214c4" />
+          <Property Name="paye_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="39aa9513-1f85-4d96-abaf-663990db2fe6" />
+          <Property Name="uif_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="4ca36986-1caf-449b-92f7-193c53ab334d" />
+          <Property Name="providend_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="5db097c9-56ea-4a57-b6cc-7960a136d71f" />
+          <Property Name="other_deduction1_value_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="c301f873-dd07-4c7b-a62c-1f325b7730d6" />
+          <Property Name="other_deduction1_descr_tmp" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="7712dc2f-7199-4290-9277-65f0ba68bdde" />
+          <Property Name="gross_pay_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="4d50de07-c2b6-45a9-9b91-d13be5477da3" />
+          <Property Name="total_deduction_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="0ae71f21-7ab8-4b4e-9994-5b5b08a2d7a9" />
+          <Property Name="net_pay_tmp" Type="Decimal" ed:ValidateRequired="false" ed:Guid="7e668c89-71b1-46b9-9bd1-43f86ab0c2e6" />
+          <Property Name="pay_date_tmp" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d8b12243-6544-4068-bd9a-8717fbd5518d" />
+          <Property Name="basic_salary_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="38548d39-ba5f-4317-80a2-247e3b763b24" />
+          <Property Name="other_earnings1_value_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="5172ff83-4470-4eda-b2b0-15beb9817537" />
+          <Property Name="other_earnings1_descr_jan" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="52f00e87-ae52-4ea2-9568-6d87915ff1d1" />
+          <Property Name="paye_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a017ea23-3c54-482c-9aa7-6f1012f64347" />
+          <Property Name="uif_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="8fd9ee26-9cea-490a-a709-3ccde83bf82f" />
+          <Property Name="providend_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="54a0208d-7508-45c9-bb09-ff71ebd20138" />
+          <Property Name="other_deduction1_value_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="df63d926-7bcf-4e8c-aa24-a4a98bd0553e" />
+          <Property Name="other_deduction1_descr_jan" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="7920c1ee-0a85-4b61-99f2-998a973199cc" />
+          <Property Name="gross_pay_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="baab439b-960e-4bf0-87bf-ed1304111be8" />
+          <Property Name="total_deduction_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="10f57058-dc44-4ba9-9be0-033afcb1dde9" />
+          <Property Name="net_pay_jan" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f29b4ed1-e7c7-4516-adec-d89a2eb87101" />
+          <Property Name="pay_date_jan" Type="DateTime" ed:ValidateRequired="false" ed:Guid="735548c5-eb3a-4490-a17b-a2783faed377" />
+          <Property Name="basic_salary_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a923bf35-b8da-4cbe-a3cc-71b68ad3d2b6" />
+          <Property Name="other_earnings1_value_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="0120266d-f19d-4630-acfd-66e4a3c65997" />
+          <Property Name="other_earnings1_descr_feb" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="724ad197-6946-41fc-9c84-81e3860d6ee6" />
+          <Property Name="paye_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="d8527d11-725c-46d6-b524-d7ca41d9e15d" />
+          <Property Name="uif_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3ffc6c78-3f94-415e-a3aa-5daca7f78675" />
+          <Property Name="providend_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="c9156ba6-4d9a-48fb-bd6e-36c747f46898" />
+          <Property Name="other_deduction1_value_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="485f85d0-f368-4fe0-a6ab-73fc90aeabce" />
+          <Property Name="other_deduction1_descr_feb" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="30b16617-2505-400e-88ea-537a5cf7c13f" />
+          <Property Name="gross_pay_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="da4b50bb-7eb9-4680-9b51-7e0f1415ab94" />
+          <Property Name="total_deduction_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="d7e765c7-87be-42b9-b5f2-5042a360ca66" />
+          <Property Name="net_pay_feb" Type="Decimal" ed:ValidateRequired="false" ed:Guid="c29c3d64-1e72-4ee5-a5b9-21d297d4a2e4" />
+          <Property Name="pay_date_feb" Type="DateTime" ed:ValidateRequired="false" ed:Guid="ffd24af9-2b6c-4961-820d-d80292878d26" />
+          <Property Name="basic_salary_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="473452d4-3975-4e1b-acc9-78589d990b8d" />
+          <Property Name="other_earnings1_value_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e3b44c43-e4a6-4e45-870a-8163cb9b0d0a" />
+          <Property Name="other_earnings1_descr_mar" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="68744010-6487-4c35-abe0-32357129eaea" />
+          <Property Name="paye_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3854426c-c9a8-4404-b666-1af57a3d6291" />
+          <Property Name="uif_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e3e4bb4f-db52-4033-999f-b5799e294949" />
+          <Property Name="providend_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="bdc987b5-de6c-4bb8-9182-bd43fa35bae5" />
+          <Property Name="other_deduction1_value_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="fd59dce0-c2ad-4259-b0b5-474ed6d93b87" />
+          <Property Name="other_deduction1_descr_mar" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="a2023689-905a-4f04-bd1a-ff5cff4545e7" />
+          <Property Name="gross_pay_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="2f1e652e-ad05-4219-b082-34fd32c3ce0e" />
+          <Property Name="total_deduction_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3b093c3c-9bef-40db-93c0-666656214a98" />
+          <Property Name="net_pay_mar" Type="Decimal" ed:ValidateRequired="false" ed:Guid="27305af9-ed75-444d-a395-37dfda6215e8" />
+          <Property Name="pay_date_mar" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e7f43e0e-6a23-4dcf-a168-ee554ba42beb" />
+          <Property Name="basic_salary_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="2353174c-bea9-4ea5-8519-980169f6770c" />
+          <Property Name="other_earnings1_value_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="be2e6a63-dde4-4b25-b80c-a9ed2d518cc8" />
+          <Property Name="other_earnings1_descr_apr" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="800bc3d5-4cad-4cda-bdd5-fa8c722a863e" />
+          <Property Name="paye_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="9c6664e9-1621-44b5-a484-ea03787593a6" />
+          <Property Name="uif_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="1afc65bc-64a1-4b32-9182-a0acfc6e779f" />
+          <Property Name="providend_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="fa19f44b-ae10-4af6-b8d7-688b45d5b4e8" />
+          <Property Name="other_deduction1_value_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="c6161b4f-e416-4d1b-8410-d8470f894e18" />
+          <Property Name="other_deduction1_descr_apr" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="231406fd-3f92-4142-853b-31afa5e6bfd9" />
+          <Property Name="gross_pay_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="64f02710-4b0c-41a4-817f-e3b301d6c8c0" />
+          <Property Name="total_deduction_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ee98be45-1985-47c0-baf6-dabf3d4bb862" />
+          <Property Name="net_pay_apr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="9f215d18-770e-4b7b-9c40-1187d3ffe799" />
+          <Property Name="pay_date_apr" Type="DateTime" ed:ValidateRequired="false" ed:Guid="2be881c6-eda8-49d6-a3c0-5cb2a2e9f31b" />
+          <Property Name="basic_salary_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="651415e5-fc6f-4149-bd45-5f08a48c82ae" />
+          <Property Name="other_earnings1_value_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="0ce56215-33f9-4e38-b4a5-0f88caa1b42c" />
+          <Property Name="other_earnings1_descr_may" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f2183a7f-7ca7-4962-bfbd-286187eae7ed" />
+          <Property Name="paye_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="99375466-8f22-4fd7-b090-81535acd6a84" />
+          <Property Name="uif_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="de740d96-ac40-44c3-9beb-c114c03339fa" />
+          <Property Name="providend_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="4c405136-dafb-4211-8d20-3922091697c9" />
+          <Property Name="other_deduction1_value_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="4820be7a-e6cc-48e8-9344-8cff4ff8952f" />
+          <Property Name="other_deduction1_descr_may" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="96441342-576b-4627-abb6-f1c142451536" />
+          <Property Name="gross_pay_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="cfe33019-e5e4-4aa6-8ca4-5cba37534b5e" />
+          <Property Name="total_deduction_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="fbb880ae-5bac-4ead-b9bd-7f4eea739f77" />
+          <Property Name="net_pay_may" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a9ecd6b9-14b8-43d0-af72-e41662b85be6" />
+          <Property Name="pay_date_may" Type="DateTime" ed:ValidateRequired="false" ed:Guid="fbe6ac56-7cdc-4c29-b944-736675ebb21c" />
+          <Property Name="basic_salary_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="d7f9388d-3492-4a6c-be6f-adf55e6e9c0d" />
+          <Property Name="other_earnings1_value_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="351e688a-9404-455b-b08c-d4874b932296" />
+          <Property Name="other_earnings1_descr_jun" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f4a60ce5-7135-4a71-993a-9c0621388dd0" />
+          <Property Name="paye_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="b28870b2-dd57-4a8b-8f9b-b4a6f2bd38b5" />
+          <Property Name="uif_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="9785e141-dc92-42c8-b7c6-e6ad5094d79e" />
+          <Property Name="providend_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f89bab14-8bb0-48ca-b8e9-66afb37c4d24" />
+          <Property Name="other_deduction1_value_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="7e025bc8-00ff-4d73-a8e9-d583f9634255" />
+          <Property Name="other_deduction1_descr_jun" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="62bcab08-d2c2-4aa8-9281-ab829bfef564" />
+          <Property Name="gross_pay_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="84522869-f610-4f0e-a508-cd0daca8894f" />
+          <Property Name="total_deduction_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f1a008a0-05a9-429c-8d41-0b15f4c9df26" />
+          <Property Name="net_pay_jun" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3ab561d9-fd3f-43ca-af03-96192231f69f" />
+          <Property Name="pay_date_jun" Type="DateTime" ed:ValidateRequired="false" ed:Guid="dc5de651-d73f-48f8-937d-a4847078992b" />
+          <Property Name="basic_salary_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="0c429dc7-2f38-49b1-83c8-f07e6021f6d2" />
+          <Property Name="other_earnings1_value_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="02e4ac65-71df-47dd-b4fc-cc6eb57e492d" />
+          <Property Name="other_earnings1_descr_jul" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="c2a3fd26-f7b1-4afa-ac12-1576340b991f" />
+          <Property Name="paye_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="1b20e31a-6887-40a5-bb98-62a0edcc662e" />
+          <Property Name="uif_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3586229b-f73a-43e0-9d7a-f9d991cd8bb2" />
+          <Property Name="providend_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="9121e9df-8075-49ba-9d4a-633e1c189c1c" />
+          <Property Name="other_deduction1_value_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="78b99f01-d55d-4c08-9031-04c0b817c41c" />
+          <Property Name="other_deduction1_descr_jul" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="bdd6fee4-85d2-4d74-b630-26a86ba24d8e" />
+          <Property Name="gross_pay_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="393cc950-f0e7-40a0-b9ee-a0ba94c3d831" />
+          <Property Name="total_deduction_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3a347b68-46e9-4c6f-a660-38b923548c2e" />
+          <Property Name="net_pay_jul" Type="Decimal" ed:ValidateRequired="false" ed:Guid="c135bc05-908b-4991-af28-8ced5243b96d" />
+          <Property Name="pay_date_jul" Type="DateTime" ed:ValidateRequired="false" ed:Guid="5806e595-aa6f-407c-9d5d-672658e65174" />
+          <Property Name="basic_salary_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="43860334-5d19-419c-83da-d99943493b06" />
+          <Property Name="other_earnings1_value_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f9df462e-830a-4dbf-aeb3-194e8afbfe1b" />
+          <Property Name="other_earnings1_descr_aug" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="aba4a6d1-3e9d-43ef-a09d-a93c02f19afc" />
+          <Property Name="paye_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a2086e3f-f6bf-47d4-b22f-cb6ef935206f" />
+          <Property Name="uif_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="8da591ad-2287-4172-8001-30723f36ae55" />
+          <Property Name="providend_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a4725889-7a3f-4e2b-8cfe-f7b95bb0769c" />
+          <Property Name="other_deduction1_value_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e07d7371-a478-40ff-9d53-2f87e804a169" />
+          <Property Name="other_deduction1_descr_aug" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="09be5995-a9ec-45b2-83c2-fdb0349c008a" />
+          <Property Name="gross_pay_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="b5337cc7-6a16-48e8-8803-8061d25eaf35" />
+          <Property Name="total_deduction_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e86a8e1d-e24f-4911-9e26-ca6e827c1889" />
+          <Property Name="net_pay_aug" Type="Decimal" ed:ValidateRequired="false" ed:Guid="59dd085e-43ee-4331-984c-15f28d8fd987" />
+          <Property Name="pay_date_aug" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3be18f03-fc41-4386-a79f-15adb86aa970" />
+          <Property Name="basic_salary_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ed0d5677-f368-4972-8ac7-7868136ac55c" />
+          <Property Name="other_earnings1_value_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="04462765-2f6d-4369-a979-a2d2150773a4" />
+          <Property Name="other_earnings1_descr_sep" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="e2290b92-cbc4-4083-878d-980a0221af24" />
+          <Property Name="paye_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="cac35c69-6e01-4e97-80c8-1031389990b6" />
+          <Property Name="uif_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e12fdd34-50bd-4717-ba89-71b1c44395ef" />
+          <Property Name="providend_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3c09fd24-f61b-4a9a-b147-5136a2030ef4" />
+          <Property Name="other_deduction1_value_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f2dc3006-d872-4ef7-93e3-e8655e4334cd" />
+          <Property Name="other_deduction1_descr_sep" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1077567c-5cce-4de1-9402-eb725134fe13" />
+          <Property Name="gross_pay_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="7df4024c-955e-4c7d-b443-b7a4fb5329e2" />
+          <Property Name="total_deduction_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e3cedc2b-facd-4a38-b9d8-ab8c90bfdfd5" />
+          <Property Name="net_pay_sep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a7ca6e6f-2ad4-4861-94d4-f329e04dc163" />
+          <Property Name="pay_date_sep" Type="DateTime" ed:ValidateRequired="false" ed:Guid="5a0ef4c3-cc67-4be0-95e7-4072ad7db50e" />
+          <Property Name="basic_salary_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="857fa737-146d-4643-887a-d6da2bc65a71" />
+          <Property Name="other_earnings1_value_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="91deec21-d519-4cab-8fc1-c201ec79752e" />
+          <Property Name="other_earnings1_descr_oct" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="38a9cf2c-9572-46c4-b615-3dcf290e5ff2" />
+          <Property Name="paye_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e29fc42d-40b6-43f5-993c-83f94c8e3dcf" />
+          <Property Name="uif_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="219d010a-3737-4d7d-bdc6-160028a97de2" />
+          <Property Name="providend_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ff47ae4a-a6ad-4cc4-9b1a-272ac8980f31" />
+          <Property Name="other_deduction1_value_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="752f3ae0-4125-4c88-b299-e5bf2436fb00" />
+          <Property Name="other_deduction1_descr_oct" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="93e3e96d-635f-413a-81f5-d01e14a0d102" />
+          <Property Name="gross_pay_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="c9d9ab9e-3cc8-4651-8092-3ab6acb7c877" />
+          <Property Name="total_deduction_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="de197cc5-4024-4154-8202-7a10872da4ae" />
+          <Property Name="net_pay_oct" Type="Decimal" ed:ValidateRequired="false" ed:Guid="96aa57b8-b27d-4daa-a6e7-a79baf8b68ac" />
+          <Property Name="pay_date_oct" Type="DateTime" ed:ValidateRequired="false" ed:Guid="3b698a1a-e45c-4a99-a63e-3b75ca384eaf" />
+          <Property Name="basic_salary_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="1cd6f0ae-c082-46fc-bf76-528261a1d377" />
+          <Property Name="other_earnings1_value_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a07e7ceb-938e-4c0a-aab4-2969684f8626" />
+          <Property Name="other_earnings1_descr_nov" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="3cb66fed-cde6-407d-999c-89085bee8c28" />
+          <Property Name="paye_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="97eeb444-7563-408e-bc75-9d60fe72ae86" />
+          <Property Name="uif_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="8b8fcc0d-2794-4d7e-aed2-6006386111e6" />
+          <Property Name="providend_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="7e6f6631-b6c8-4848-99de-8818f518e66c" />
+          <Property Name="other_deduction1_value_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="cb8cdad1-01a1-493b-aa1a-9667a72eb9d4" />
+          <Property Name="other_deduction1_descr_nov" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="eee7c58f-1412-4422-88b6-8b58e781d9ec" />
+          <Property Name="gross_pay_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ace14cd3-2d99-4006-b704-bb24dcab0ff3" />
+          <Property Name="total_deduction_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="a4ffc96f-b457-4a52-8812-8936626e1d11" />
+          <Property Name="net_pay_nov" Type="Decimal" ed:ValidateRequired="false" ed:Guid="2058162d-976c-4230-b224-83314015f8a4" />
+          <Property Name="pay_date_nov" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e06eb9be-c49a-4250-ad2b-fa48c8017e14" />
+          <Property Name="basic_salary_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="bae420f7-4677-4535-a709-d39293c10c77" />
+          <Property Name="other_earnings1_value_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="834d519a-903a-4d52-a1fe-79e55b5cce14" />
+          <Property Name="other_earnings1_descr_dec" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="ebaa1e46-50a7-4ed2-b3f7-6d33fa25e764" />
+          <Property Name="paye_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="b70e14a8-cb4e-4b24-896d-e97576e66234" />
+          <Property Name="uif_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="5808567d-0e95-4fae-97b8-40e09b41e02d" />
+          <Property Name="providend_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="37bb81e4-7691-49aa-92f9-1665aeaa40fb" />
+          <Property Name="other_deduction1_value_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="712d1b48-4e86-40e5-83fc-514e916871fb" />
+          <Property Name="other_deduction1_descr_dec" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="d1355f8f-6460-4a77-a592-2da2e899c855" />
+          <Property Name="gross_pay_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="70af5b32-1abe-4812-9621-7985774ccf01" />
+          <Property Name="total_deduction_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="18383edd-1fb3-4c71-8e86-6eebb85e3090" />
+          <Property Name="net_pay_dec" Type="Decimal" ed:ValidateRequired="false" ed:Guid="057eeed8-8698-44fb-8d57-1958a0ff8ced" />
+          <Property Name="pay_date_dec" Type="DateTime" ed:ValidateRequired="false" ed:Guid="e6580b1f-08a6-418e-9ccc-388f103b3d63" />
+          <Property Name="basic_salary_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="cc402da5-0bbb-4e1e-8c42-97175cdb557c" />
+          <Property Name="other_earnings1_value_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="65b51150-75a8-4259-b34a-3fe422b8431e" />
+          <Property Name="other_earnings1_descr_xtr" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8a53b66a-d0b4-457f-9f77-99700286b68a" />
+          <Property Name="paye_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="745a0092-196b-4127-ba3f-51024910e8e6" />
+          <Property Name="uif_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="bf02c6e9-2392-4f81-8ec2-553c0cf24744" />
+          <Property Name="providend_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="97ab746f-0519-4cd3-b289-74316ef8c08a" />
+          <Property Name="other_deduction1_value_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="03debe7a-a3d8-480d-9767-c176c7a04e40" />
+          <Property Name="other_deduction1_descr_xtr" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8e628921-872f-43c9-83e0-75ce7616a414" />
+          <Property Name="gross_pay_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="7cd09006-9aba-45aa-a522-a69d80ed8283" />
+          <Property Name="total_deduction_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="658e6564-0268-424f-befc-4e72e05ea73f" />
+          <Property Name="net_pay_xtr" Type="Decimal" ed:ValidateRequired="false" ed:Guid="43402da5-1dc7-411c-ad9d-62f7549c2c2a" />
+          <Property Name="pay_date_xtr" Type="DateTime" ed:ValidateRequired="false" ed:Guid="2cd94dbd-78c4-4578-ba54-8dc7ed054cb2" />
+        </EntityType>
+        <EntityType Name="Payroll" ed:Guid="d1e46ffb-a152-4972-8972-58c1c12d41c9">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="f709497d-3521-485b-bce9-043fdb195fce" />
+          <Property Name="lastname" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="c71085a0-7e1f-4059-a89c-7be66a3ca313" />
+          <Property Name="firstname" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="c18d4e17-4912-4c1f-8430-09ceffc99bac" />
+          <Property Name="identity_no" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="1b8ec382-5658-49ac-8873-0069e1bcd43c" />
+          <Property Name="pay_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="a485fbce-54ee-44db-a1e4-78abf4508466" />
+          <Property Name="occupation" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="71ad8ee2-207c-43a9-8c8f-59044a9b717b" />
+          <Property Name="appointed_date" Type="DateTime" ed:ValidateRequired="false" ed:Guid="4c9eb8e6-68db-4ba4-b574-fd384398b91b" />
+          <Property Name="tax_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="585b1281-1026-4e6d-adc6-cbda7f7b3667" />
+          <Property Name="status" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="00f80f9a-3fb0-48ea-af73-b3b997ab90e6" />
+          <Property Name="basic_salary" Type="Decimal" ed:ValidateRequired="false" ed:Guid="9d47da21-f509-49b9-bb0e-7a7272a42db8" />
+          <Property Name="other_earnings1_value" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e3113aff-b1ae-4d45-86f1-16bcf63c8b8b" />
+          <Property Name="other_earnings1_descr" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="b81dccac-e310-417e-a84e-a7555748644c" />
+          <Property Name="paye" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e4886916-7f08-4d72-a37b-524435fac86d" />
+          <Property Name="uif" Type="Decimal" ed:ValidateRequired="false" ed:Guid="57de544f-6466-4f81-9054-c8be4084a491" />
+          <Property Name="providend" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ba6068ed-ab6a-4ec9-b522-0343e5f34b48" />
+          <Property Name="other_deduction1_value" Type="Decimal" ed:ValidateRequired="false" ed:Guid="296c8c46-398b-460f-8e0d-66759c429e2d" />
+          <Property Name="other_deduction1_descr" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="a12c4190-5f06-4b39-bd9f-cd2345a73936" />
+          <Property Name="gross_pay" Type="Decimal" ed:ValidateRequired="false" ed:Guid="1b786dc4-5be7-4a50-b3fb-a2405b068110" />
+          <Property Name="total_deduction" Type="Decimal" ed:ValidateRequired="false" ed:Guid="cb070033-7830-4dc4-a887-dfa45a031775" />
+          <Property Name="net_pay" Type="Decimal" ed:ValidateRequired="false" ed:Guid="88cbeae8-b798-4ed1-a610-f2c65d37973a" />
+          <Property Name="pay_date" Type="DateTime" ed:ValidateRequired="false" ed:Guid="8bf0a709-29a6-4ab0-9845-a1f51a558f55" />
+        </EntityType>
+        <EntityType Name="Employer" ed:Guid="b4024e05-6002-47af-95c4-7bb5e4ed6480">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="6bfe365d-ccfc-494c-b612-8373a6173b8c" />
+          <Property Name="name" Type="String" MaxLength="100" Unicode="true" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="d94aae01-e0d0-4876-92d6-9a334aaa98a4" />
+          <Property Name="addr1" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="9c88ae50-e4fe-4e1e-8c5b-67ff71d7ac2a" />
+          <Property Name="addr2" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="4afabd92-0ad9-43fb-9025-41cd84f55fa1" />
+          <Property Name="addr3" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="70808a3f-5ad9-4e71-b08a-cc07bfe627e3" />
+          <Property Name="addr4" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="f4822110-1ba1-4096-9e6c-b14405b5e07f" />
+          <Property Name="paye_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="66130cbf-6728-4523-af04-ae9e8bfc9f67" />
+          <Property Name="uif_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="0df6c0a2-6494-4c03-9464-2b2cbcb87e1b" />
+          <Property Name="sdl_id" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="4fa4dd34-b25a-4684-acc3-f05002c8dffd" />
+          <Property Name="currentstart" Type="DateTime" ed:ValidateRequired="false" ed:Guid="b8dc5044-94fe-4f81-8d80-372a00ae6de2" />
+          <Property Name="currentend" Type="DateTime" ed:ValidateRequired="false" ed:Guid="47b8f09c-e9d4-490c-8252-c5161faadb1b" />
+          <Property Name="database_path" Type="String" MaxLength="100" Unicode="true" ed:ValidateMaxLength="100" ed:ValidateRequired="false" ed:Guid="91a8b7be-8145-48d3-84af-74ffe17c0596" />
+          <Property Name="tel" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="18c8c7c7-a531-4947-b15d-2782d0b1e1c7" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="8f52e8a4-e2f8-44d8-b4cb-b7f0be3b2603" />
+          <Property Name="contact" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="54accedb-4824-41c7-8fcb-20c7045939bf" />
+          <Property Name="paydate" Type="DateTime" ed:ValidateRequired="false" ed:Guid="52d3bae9-681c-4663-b9dc-af74be16c958" />
+          <Property Name="paymonth" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="ee9e0fc3-734d-4eeb-a52c-314273e5ecc6" />
+        </EntityType>
+        <EntityType Name="PAYEtable" ed:Guid="7700c2a1-0d1c-4569-857c-3d7ec8e61669">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" ed:ValidateRequired="true" ed:Guid="f8f96132-beb1-404d-bad9-94cf3c6d7956" />
+          <Property Name="payename" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="db075ea2-1e0c-4af4-b46c-1e11b41add80" />
+          <Property Name="taxyear" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="0806e1ec-5b9e-42b2-b29a-159778fb8fdc" />
+          <Property Name="dateapplyfrom" Type="DateTime" ed:ValidateRequired="false" ed:Guid="435d8a52-37e6-4237-b20a-74e07a77d42b" />
+          <Property Name="threshold1start" Type="Decimal" ed:ValidateRequired="false" ed:Guid="715cb5eb-33d0-49f9-825e-9ec79bfbb547" />
+          <Property Name="threshold1end" Type="Decimal" ed:ValidateRequired="false" ed:Guid="b8972f3d-dfc0-41b9-94f8-6a4bbca2dce1" />
+          <Property Name="threshold2start" Type="Decimal" ed:ValidateRequired="false" ed:Guid="5ba865a0-85da-40c5-bda7-0b554f1e24c1" />
+          <Property Name="threshold2end" Type="Decimal" ed:ValidateRequired="false" ed:Guid="dff4b3c5-528a-4f92-8103-fa2499dd7f84" />
+          <Property Name="threshold3start" Type="Decimal" ed:ValidateRequired="false" ed:Guid="0876764f-04de-43fd-a38f-4a1167f2c2f9" />
+          <Property Name="threshold3end" Type="Decimal" ed:ValidateRequired="false" ed:Guid="8949a87a-a2aa-42df-9827-f4eb2237fe49" />
+          <Property Name="threshold4start" Type="Decimal" ed:ValidateRequired="false" ed:Guid="20aff4fc-12e8-4b56-8d29-1b24111b8dca" />
+          <Property Name="threshold4end" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f84edc12-7261-4832-8136-4fe19246c22b" />
+          <Property Name="threshold5start" Type="Decimal" ed:ValidateRequired="false" ed:Guid="2ca66ccd-2d33-4c28-927f-d7c9bda3d3f7" />
+          <Property Name="threshold5end" Type="Decimal" ed:ValidateRequired="false" ed:Guid="7c5baa0e-2815-439c-9d9b-56cd78f04f1b" />
+          <Property Name="threshold6start" Type="Decimal" ed:ValidateRequired="false" ed:Guid="8a8be388-07ed-4313-b658-519a683808e2" />
+          <Property Name="rebate64" Type="Decimal" ed:ValidateRequired="false" ed:Guid="1022e5b9-171d-49ad-9e42-b05bd11abee8" />
+          <Property Name="rebate6574" Type="Decimal" ed:ValidateRequired="false" ed:Guid="29c66f45-465c-480e-9549-38bb3dd2596b" />
+          <Property Name="rebate75" Type="Decimal" ed:ValidateRequired="false" ed:Guid="4995ff25-5fed-43ea-b1da-85327f9f47bb" />
+          <Property Name="taxthreshold64" Type="Decimal" ed:ValidateRequired="false" ed:Guid="634330bb-bb95-4921-b60e-d7bef0475770" />
+          <Property Name="taxthreshold6574" Type="Decimal" ed:ValidateRequired="false" ed:Guid="6bb87fb8-fcc4-44e0-8689-1d184c4b89c5" />
+          <Property Name="taxthreshold75" Type="Decimal" ed:ValidateRequired="false" ed:Guid="b33eef3a-1775-4315-92c1-7b819ff3870c" />
+          <Property Name="medaidprincipal" Type="Decimal" ed:ValidateRequired="false" ed:Guid="bf230427-fb43-403e-8149-f8d3ca835e5a" />
+          <Property Name="medaidfirstdep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="bbb8c46a-91d5-4f7d-af71-dde7136edc2f" />
+          <Property Name="medaidsubsdep" Type="Decimal" ed:ValidateRequired="false" ed:Guid="cf6df17c-fecb-4356-a7e2-1df7a221c5e3" />
+          <Property Name="calc1base" Type="Decimal" ed:ValidateRequired="false" ed:Guid="176b666e-815f-4639-ba47-b28905d523a8" />
+          <Property Name="calc1rate" Type="Decimal" ed:ValidateRequired="false" ed:Guid="f812ae75-1ccd-4e28-af84-723131922a7a" />
+          <Property Name="calc1threshold" Type="Decimal" ed:ValidateRequired="false" ed:Guid="af058ece-a30d-4367-b806-ee6cc42e981f" />
+          <Property Name="calc2base" Type="Decimal" ed:ValidateRequired="false" ed:Guid="45022e97-f7ba-456c-8ab3-2aa31497faf0" />
+          <Property Name="calc2rate" Type="Decimal" ed:ValidateRequired="false" ed:Guid="52fc0eb9-d018-40ec-a454-b0eb18b843e4" />
+          <Property Name="calc2threshold" Type="Decimal" ed:ValidateRequired="false" ed:Guid="4d03f004-48a7-47c4-9b20-3843b15607ef" />
+          <Property Name="calc3base" Type="Decimal" ed:ValidateRequired="false" ed:Guid="d8ddb27b-ac36-49ff-98b2-0737dab43c1d" />
+          <Property Name="calc3rate" Type="Decimal" ed:ValidateRequired="false" ed:Guid="da7e36d4-8875-44e7-93e3-184f586ef607" />
+          <Property Name="calc3threshold" Type="Decimal" ed:ValidateRequired="false" ed:Guid="3ccfd9ab-631b-49a3-bca5-d8daa783a12c" />
+          <Property Name="calc4base" Type="Decimal" ed:ValidateRequired="false" ed:Guid="df9bfe5d-220f-47ed-81f2-9bf342743faa" />
+          <Property Name="calc4rate" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ada95f82-913c-4d43-9a39-e44a603fc2a8" />
+          <Property Name="calc4threshold" Type="Decimal" ed:ValidateRequired="false" ed:Guid="ba13259a-fb68-404e-9242-6bb209eabdff" />
+          <Property Name="calc5base" Type="Decimal" ed:ValidateRequired="false" ed:Guid="61026f5c-5994-4f00-851e-b2c8b055fe50" />
+          <Property Name="calc5rate" Type="Decimal" ed:ValidateRequired="false" ed:Guid="39fc37a2-9d43-4da7-a329-b925957fb553" />
+          <Property Name="calc5threshold" Type="Decimal" ed:ValidateRequired="false" ed:Guid="2af2cf40-74f3-462d-b09e-e6a02a0286b0" />
+          <Property Name="calc6base" Type="Decimal" ed:ValidateRequired="false" ed:Guid="2aec923e-1d37-4416-8589-21b6ee912beb" />
+          <Property Name="calc6rate" Type="Decimal" ed:ValidateRequired="false" ed:Guid="e7e5da55-ebd1-45e3-b0ab-5bc50d9644a9" />
+          <Property Name="calc6threshold" Type="Decimal" ed:ValidateRequired="false" ed:Guid="65e6c27f-3a35-4bc2-a5e1-0ae35c5580b2" />
+        </EntityType>
+        <EntityType Name="Options" ed:Guid="61157d91-5c23-4d22-9e5e-fad7942eccba">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" ed:ValidateRequired="true" ed:Guid="e3577a8f-29a3-41b7-9dba-8c13cb72cbd5" />
+          <Property Name="current_month" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="21adf8a7-afe7-4be2-9c8d-70d5e6b0b4e0" />
+          <Property Name="pay_date" Type="DateTime" ed:ValidateRequired="false" ed:Guid="fb8ea8b8-59ab-4904-b455-6a34775f7ff4" />
+          <Property Name="tax_year_start" Type="DateTime" ed:ValidateRequired="false" ed:Guid="d269c73a-79e9-4cbe-b3d7-dbdab2bf04c5" />
+          <Property Name="tax_year_end" Type="DateTime" ed:ValidateRequired="false" ed:Guid="114429a2-4e43-4631-8e20-2967ed9f6fdb" />
+          <Property Name="pay_cycle" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="b3bccb7b-ff88-46d2-8237-975d18ffe391" />
+          <Property Name="days_per_cycle" Type="Int64" ed:ValidateRequired="false" ed:Guid="b94beb6e-f529-47fa-a105-c2f0899b510a" />
+          <Property Name="hours_per_cycle" Type="Int64" ed:ValidateRequired="false" ed:Guid="5709f559-9d63-4470-ad92-63e4993ae847" />
+          <Property Name="pay_week_ending" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="0e2f84f1-9b30-438b-8c70-b34026ebc505" />
+          <Property Name="annualised_tax" Type="String" MaxLength="50" Unicode="true" ed:ValidateMaxLength="50" ed:ValidateRequired="false" ed:Guid="abd6e647-d15d-43a3-b5ad-2928412a07cd" />
+          <Property Name="shifts_per_year" Type="Int64" ed:ValidateRequired="false" ed:Guid="628e9a0b-b791-4a7b-8de2-78bd7910f83c" />
+          <Property Name="stamps_per_cycle" Type="Int64" ed:ValidateRequired="false" ed:Guid="7ed63732-511f-437b-b2f6-2804a28a389a" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- MSL content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="mainEntitiesStoreContainer" CdmEntityContainer="mainEntities">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="mainModel.Employee">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="firstname" ColumnName="firstname" />
+                <ScalarProperty Name="identity_no" ColumnName="identity_no" />
+                <ScalarProperty Name="pay_id" ColumnName="pay_id" />
+                <ScalarProperty Name="occupation" ColumnName="occupation" />
+                <ScalarProperty Name="appointed_date" ColumnName="appointed_date" />
+                <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="basic_salary_tmp" ColumnName="basic_salary_tmp" />
+                <ScalarProperty Name="other_earnings1_value_tmp" ColumnName="other_earnings1_value_tmp" />
+                <ScalarProperty Name="other_earnings1_descr_tmp" ColumnName="other_earnings1_descr_tmp" />
+                <ScalarProperty Name="paye_tmp" ColumnName="paye_tmp" />
+                <ScalarProperty Name="uif_tmp" ColumnName="uif_tmp" />
+                <ScalarProperty Name="providend_tmp" ColumnName="providend_tmp" />
+                <ScalarProperty Name="other_deduction1_value_tmp" ColumnName="other_deduction1_value_tmp" />
+                <ScalarProperty Name="other_deduction1_descr_tmp" ColumnName="other_deduction1_descr_tmp" />
+                <ScalarProperty Name="gross_pay_tmp" ColumnName="gross_pay_tmp" />
+                <ScalarProperty Name="total_deduction_tmp" ColumnName="total_deduction_tmp" />
+                <ScalarProperty Name="net_pay_tmp" ColumnName="net_pay_tmp" />
+                <ScalarProperty Name="pay_date_tmp" ColumnName="pay_date_tmp" />
+                <ScalarProperty Name="basic_salary_jan" ColumnName="basic_salary_jan" />
+                <ScalarProperty Name="other_earnings1_value_jan" ColumnName="other_earnings1_value_jan" />
+                <ScalarProperty Name="other_earnings1_descr_jan" ColumnName="other_earnings1_descr_jan" />
+                <ScalarProperty Name="paye_jan" ColumnName="paye_jan" />
+                <ScalarProperty Name="uif_jan" ColumnName="uif_jan" />
+                <ScalarProperty Name="providend_jan" ColumnName="providend_jan" />
+                <ScalarProperty Name="other_deduction1_value_jan" ColumnName="other_deduction1_value_jan" />
+                <ScalarProperty Name="other_deduction1_descr_jan" ColumnName="other_deduction1_descr_jan" />
+                <ScalarProperty Name="gross_pay_jan" ColumnName="gross_pay_jan" />
+                <ScalarProperty Name="total_deduction_jan" ColumnName="total_deduction_jan" />
+                <ScalarProperty Name="net_pay_jan" ColumnName="net_pay_jan" />
+                <ScalarProperty Name="pay_date_jan" ColumnName="pay_date_jan" />
+                <ScalarProperty Name="basic_salary_feb" ColumnName="basic_salary_feb" />
+                <ScalarProperty Name="other_earnings1_value_feb" ColumnName="other_earnings1_value_feb" />
+                <ScalarProperty Name="other_earnings1_descr_feb" ColumnName="other_earnings1_descr_feb" />
+                <ScalarProperty Name="paye_feb" ColumnName="paye_feb" />
+                <ScalarProperty Name="uif_feb" ColumnName="uif_feb" />
+                <ScalarProperty Name="providend_feb" ColumnName="providend_feb" />
+                <ScalarProperty Name="other_deduction1_value_feb" ColumnName="other_deduction1_value_feb" />
+                <ScalarProperty Name="other_deduction1_descr_feb" ColumnName="other_deduction1_descr_feb" />
+                <ScalarProperty Name="gross_pay_feb" ColumnName="gross_pay_feb" />
+                <ScalarProperty Name="total_deduction_feb" ColumnName="total_deduction_feb" />
+                <ScalarProperty Name="net_pay_feb" ColumnName="net_pay_feb" />
+                <ScalarProperty Name="pay_date_feb" ColumnName="pay_date_feb" />
+                <ScalarProperty Name="basic_salary_mar" ColumnName="basic_salary_mar" />
+                <ScalarProperty Name="other_earnings1_value_mar" ColumnName="other_earnings1_value_mar" />
+                <ScalarProperty Name="other_earnings1_descr_mar" ColumnName="other_earnings1_descr_mar" />
+                <ScalarProperty Name="paye_mar" ColumnName="paye_mar" />
+                <ScalarProperty Name="uif_mar" ColumnName="uif_mar" />
+                <ScalarProperty Name="providend_mar" ColumnName="providend_mar" />
+                <ScalarProperty Name="other_deduction1_value_mar" ColumnName="other_deduction1_value_mar" />
+                <ScalarProperty Name="other_deduction1_descr_mar" ColumnName="other_deduction1_descr_mar" />
+                <ScalarProperty Name="gross_pay_mar" ColumnName="gross_pay_mar" />
+                <ScalarProperty Name="total_deduction_mar" ColumnName="total_deduction_mar" />
+                <ScalarProperty Name="net_pay_mar" ColumnName="net_pay_mar" />
+                <ScalarProperty Name="pay_date_mar" ColumnName="pay_date_mar" />
+                <ScalarProperty Name="basic_salary_apr" ColumnName="basic_salary_apr" />
+                <ScalarProperty Name="other_earnings1_value_apr" ColumnName="other_earnings1_value_apr" />
+                <ScalarProperty Name="other_earnings1_descr_apr" ColumnName="other_earnings1_descr_apr" />
+                <ScalarProperty Name="paye_apr" ColumnName="paye_apr" />
+                <ScalarProperty Name="uif_apr" ColumnName="uif_apr" />
+                <ScalarProperty Name="providend_apr" ColumnName="providend_apr" />
+                <ScalarProperty Name="other_deduction1_value_apr" ColumnName="other_deduction1_value_apr" />
+                <ScalarProperty Name="other_deduction1_descr_apr" ColumnName="other_deduction1_descr_apr" />
+                <ScalarProperty Name="gross_pay_apr" ColumnName="gross_pay_apr" />
+                <ScalarProperty Name="total_deduction_apr" ColumnName="total_deduction_apr" />
+                <ScalarProperty Name="net_pay_apr" ColumnName="net_pay_apr" />
+                <ScalarProperty Name="pay_date_apr" ColumnName="pay_date_apr" />
+                <ScalarProperty Name="basic_salary_may" ColumnName="basic_salary_may" />
+                <ScalarProperty Name="other_earnings1_value_may" ColumnName="other_earnings1_value_may" />
+                <ScalarProperty Name="other_earnings1_descr_may" ColumnName="other_earnings1_descr_may" />
+                <ScalarProperty Name="paye_may" ColumnName="paye_may" />
+                <ScalarProperty Name="uif_may" ColumnName="uif_may" />
+                <ScalarProperty Name="providend_may" ColumnName="providend_may" />
+                <ScalarProperty Name="other_deduction1_value_may" ColumnName="other_deduction1_value_may" />
+                <ScalarProperty Name="other_deduction1_descr_may" ColumnName="other_deduction1_descr_may" />
+                <ScalarProperty Name="gross_pay_may" ColumnName="gross_pay_may" />
+                <ScalarProperty Name="total_deduction_may" ColumnName="total_deduction_may" />
+                <ScalarProperty Name="net_pay_may" ColumnName="net_pay_may" />
+                <ScalarProperty Name="pay_date_may" ColumnName="pay_date_may" />
+                <ScalarProperty Name="basic_salary_jun" ColumnName="basic_salary_jun" />
+                <ScalarProperty Name="other_earnings1_value_jun" ColumnName="other_earnings1_value_jun" />
+                <ScalarProperty Name="other_earnings1_descr_jun" ColumnName="other_earnings1_descr_jun" />
+                <ScalarProperty Name="paye_jun" ColumnName="paye_jun" />
+                <ScalarProperty Name="uif_jun" ColumnName="uif_jun" />
+                <ScalarProperty Name="providend_jun" ColumnName="providend_jun" />
+                <ScalarProperty Name="other_deduction1_value_jun" ColumnName="other_deduction1_value_jun" />
+                <ScalarProperty Name="other_deduction1_descr_jun" ColumnName="other_deduction1_descr_jun" />
+                <ScalarProperty Name="gross_pay_jun" ColumnName="gross_pay_jun" />
+                <ScalarProperty Name="total_deduction_jun" ColumnName="total_deduction_jun" />
+                <ScalarProperty Name="net_pay_jun" ColumnName="net_pay_jun" />
+                <ScalarProperty Name="pay_date_jun" ColumnName="pay_date_jun" />
+                <ScalarProperty Name="basic_salary_jul" ColumnName="basic_salary_jul" />
+                <ScalarProperty Name="other_earnings1_value_jul" ColumnName="other_earnings1_value_jul" />
+                <ScalarProperty Name="other_earnings1_descr_jul" ColumnName="other_earnings1_descr_jul" />
+                <ScalarProperty Name="paye_jul" ColumnName="paye_jul" />
+                <ScalarProperty Name="uif_jul" ColumnName="uif_jul" />
+                <ScalarProperty Name="providend_jul" ColumnName="providend_jul" />
+                <ScalarProperty Name="other_deduction1_value_jul" ColumnName="other_deduction1_value_jul" />
+                <ScalarProperty Name="other_deduction1_descr_jul" ColumnName="other_deduction1_descr_jul" />
+                <ScalarProperty Name="gross_pay_jul" ColumnName="gross_pay_jul" />
+                <ScalarProperty Name="total_deduction_jul" ColumnName="total_deduction_jul" />
+                <ScalarProperty Name="net_pay_jul" ColumnName="net_pay_jul" />
+                <ScalarProperty Name="pay_date_jul" ColumnName="pay_date_jul" />
+                <ScalarProperty Name="basic_salary_aug" ColumnName="basic_salary_aug" />
+                <ScalarProperty Name="other_earnings1_value_aug" ColumnName="other_earnings1_value_aug" />
+                <ScalarProperty Name="other_earnings1_descr_aug" ColumnName="other_earnings1_descr_aug" />
+                <ScalarProperty Name="paye_aug" ColumnName="paye_aug" />
+                <ScalarProperty Name="uif_aug" ColumnName="uif_aug" />
+                <ScalarProperty Name="providend_aug" ColumnName="providend_aug" />
+                <ScalarProperty Name="other_deduction1_value_aug" ColumnName="other_deduction1_value_aug" />
+                <ScalarProperty Name="other_deduction1_descr_aug" ColumnName="other_deduction1_descr_aug" />
+                <ScalarProperty Name="gross_pay_aug" ColumnName="gross_pay_aug" />
+                <ScalarProperty Name="total_deduction_aug" ColumnName="total_deduction_aug" />
+                <ScalarProperty Name="net_pay_aug" ColumnName="net_pay_aug" />
+                <ScalarProperty Name="pay_date_aug" ColumnName="pay_date_aug" />
+                <ScalarProperty Name="basic_salary_sep" ColumnName="basic_salary_sep" />
+                <ScalarProperty Name="other_earnings1_value_sep" ColumnName="other_earnings1_value_sep" />
+                <ScalarProperty Name="other_earnings1_descr_sep" ColumnName="other_earnings1_descr_sep" />
+                <ScalarProperty Name="paye_sep" ColumnName="paye_sep" />
+                <ScalarProperty Name="uif_sep" ColumnName="uif_sep" />
+                <ScalarProperty Name="providend_sep" ColumnName="providend_sep" />
+                <ScalarProperty Name="other_deduction1_value_sep" ColumnName="other_deduction1_value_sep" />
+                <ScalarProperty Name="other_deduction1_descr_sep" ColumnName="other_deduction1_descr_sep" />
+                <ScalarProperty Name="gross_pay_sep" ColumnName="gross_pay_sep" />
+                <ScalarProperty Name="total_deduction_sep" ColumnName="total_deduction_sep" />
+                <ScalarProperty Name="net_pay_sep" ColumnName="net_pay_sep" />
+                <ScalarProperty Name="pay_date_sep" ColumnName="pay_date_sep" />
+                <ScalarProperty Name="basic_salary_oct" ColumnName="basic_salary_oct" />
+                <ScalarProperty Name="other_earnings1_value_oct" ColumnName="other_earnings1_value_oct" />
+                <ScalarProperty Name="other_earnings1_descr_oct" ColumnName="other_earnings1_descr_oct" />
+                <ScalarProperty Name="paye_oct" ColumnName="paye_oct" />
+                <ScalarProperty Name="uif_oct" ColumnName="uif_oct" />
+                <ScalarProperty Name="providend_oct" ColumnName="providend_oct" />
+                <ScalarProperty Name="other_deduction1_value_oct" ColumnName="other_deduction1_value_oct" />
+                <ScalarProperty Name="other_deduction1_descr_oct" ColumnName="other_deduction1_descr_oct" />
+                <ScalarProperty Name="gross_pay_oct" ColumnName="gross_pay_oct" />
+                <ScalarProperty Name="total_deduction_oct" ColumnName="total_deduction_oct" />
+                <ScalarProperty Name="net_pay_oct" ColumnName="net_pay_oct" />
+                <ScalarProperty Name="pay_date_oct" ColumnName="pay_date_oct" />
+                <ScalarProperty Name="basic_salary_nov" ColumnName="basic_salary_nov" />
+                <ScalarProperty Name="other_earnings1_value_nov" ColumnName="other_earnings1_value_nov" />
+                <ScalarProperty Name="other_earnings1_descr_nov" ColumnName="other_earnings1_descr_nov" />
+                <ScalarProperty Name="paye_nov" ColumnName="paye_nov" />
+                <ScalarProperty Name="uif_nov" ColumnName="uif_nov" />
+                <ScalarProperty Name="providend_nov" ColumnName="providend_nov" />
+                <ScalarProperty Name="other_deduction1_value_nov" ColumnName="other_deduction1_value_nov" />
+                <ScalarProperty Name="other_deduction1_descr_nov" ColumnName="other_deduction1_descr_nov" />
+                <ScalarProperty Name="gross_pay_nov" ColumnName="gross_pay_nov" />
+                <ScalarProperty Name="total_deduction_nov" ColumnName="total_deduction_nov" />
+                <ScalarProperty Name="net_pay_nov" ColumnName="net_pay_nov" />
+                <ScalarProperty Name="pay_date_nov" ColumnName="pay_date_nov" />
+                <ScalarProperty Name="basic_salary_dec" ColumnName="basic_salary_dec" />
+                <ScalarProperty Name="other_earnings1_value_dec" ColumnName="other_earnings1_value_dec" />
+                <ScalarProperty Name="other_earnings1_descr_dec" ColumnName="other_earnings1_descr_dec" />
+                <ScalarProperty Name="paye_dec" ColumnName="paye_dec" />
+                <ScalarProperty Name="uif_dec" ColumnName="uif_dec" />
+                <ScalarProperty Name="providend_dec" ColumnName="providend_dec" />
+                <ScalarProperty Name="other_deduction1_value_dec" ColumnName="other_deduction1_value_dec" />
+                <ScalarProperty Name="other_deduction1_descr_dec" ColumnName="other_deduction1_descr_dec" />
+                <ScalarProperty Name="gross_pay_dec" ColumnName="gross_pay_dec" />
+                <ScalarProperty Name="total_deduction_dec" ColumnName="total_deduction_dec" />
+                <ScalarProperty Name="net_pay_dec" ColumnName="net_pay_dec" />
+                <ScalarProperty Name="pay_date_dec" ColumnName="pay_date_dec" />
+                <ScalarProperty Name="basic_salary_xtr" ColumnName="basic_salary_xtr" />
+                <ScalarProperty Name="other_earnings1_value_xtr" ColumnName="other_earnings1_value_xtr" />
+                <ScalarProperty Name="other_earnings1_descr_xtr" ColumnName="other_earnings1_descr_xtr" />
+                <ScalarProperty Name="paye_xtr" ColumnName="paye_xtr" />
+                <ScalarProperty Name="uif_xtr" ColumnName="uif_xtr" />
+                <ScalarProperty Name="providend_xtr" ColumnName="providend_xtr" />
+                <ScalarProperty Name="other_deduction1_value_xtr" ColumnName="other_deduction1_value_xtr" />
+                <ScalarProperty Name="other_deduction1_descr_xtr" ColumnName="other_deduction1_descr_xtr" />
+                <ScalarProperty Name="gross_pay_xtr" ColumnName="gross_pay_xtr" />
+                <ScalarProperty Name="total_deduction_xtr" ColumnName="total_deduction_xtr" />
+                <ScalarProperty Name="net_pay_xtr" ColumnName="net_pay_xtr" />
+                <ScalarProperty Name="pay_date_xtr" ColumnName="pay_date_xtr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Payrolls">
+            <EntityTypeMapping TypeName="mainModel.Payroll">
+              <MappingFragment StoreEntitySet="Payrolls">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="firstname" ColumnName="firstname" />
+                <ScalarProperty Name="identity_no" ColumnName="identity_no" />
+                <ScalarProperty Name="pay_id" ColumnName="pay_id" />
+                <ScalarProperty Name="occupation" ColumnName="occupation" />
+                <ScalarProperty Name="appointed_date" ColumnName="appointed_date" />
+                <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="basic_salary" ColumnName="basic_salary" />
+                <ScalarProperty Name="other_earnings1_value" ColumnName="other_earnings1_value" />
+                <ScalarProperty Name="other_earnings1_descr" ColumnName="other_earnings1_descr" />
+                <ScalarProperty Name="paye" ColumnName="paye" />
+                <ScalarProperty Name="uif" ColumnName="uif" />
+                <ScalarProperty Name="providend" ColumnName="providend" />
+                <ScalarProperty Name="other_deduction1_value" ColumnName="other_deduction1_value" />
+                <ScalarProperty Name="other_deduction1_descr" ColumnName="other_deduction1_descr" />
+                <ScalarProperty Name="gross_pay" ColumnName="gross_pay" />
+                <ScalarProperty Name="total_deduction" ColumnName="total_deduction" />
+                <ScalarProperty Name="net_pay" ColumnName="net_pay" />
+                <ScalarProperty Name="pay_date" ColumnName="pay_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employers">
+            <EntityTypeMapping TypeName="mainModel.Employer">
+              <MappingFragment StoreEntitySet="Employers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="addr1" ColumnName="addr1" />
+                <ScalarProperty Name="addr2" ColumnName="addr2" />
+                <ScalarProperty Name="addr3" ColumnName="addr3" />
+                <ScalarProperty Name="addr4" ColumnName="addr4" />
+                <ScalarProperty Name="paye_id" ColumnName="paye_id" />
+                <ScalarProperty Name="uif_id" ColumnName="uif_id" />
+                <ScalarProperty Name="sdl_id" ColumnName="sdl_id" />
+                <ScalarProperty Name="currentstart" ColumnName="currentstart" />
+                <ScalarProperty Name="currentend" ColumnName="currentend" />
+                <ScalarProperty Name="database_path" ColumnName="database_path" />
+                <ScalarProperty Name="tel" ColumnName="tel" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="paydate" ColumnName="paydate" />
+                <ScalarProperty Name="paymonth" ColumnName="paymonth" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAYEtables">
+            <EntityTypeMapping TypeName="mainModel.PAYEtable">
+              <MappingFragment StoreEntitySet="PAYEtables">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="payename" ColumnName="paye-name" />
+                <ScalarProperty Name="taxyear" ColumnName="tax-year" />
+                <ScalarProperty Name="dateapplyfrom" ColumnName="date-applyfrom" />
+                <ScalarProperty Name="threshold1start" ColumnName="threshold1-start" />
+                <ScalarProperty Name="threshold1end" ColumnName="threshold1-end" />
+                <ScalarProperty Name="threshold2start" ColumnName="threshold2-start" />
+                <ScalarProperty Name="threshold2end" ColumnName="threshold2-end" />
+                <ScalarProperty Name="threshold3start" ColumnName="threshold3-start" />
+                <ScalarProperty Name="threshold3end" ColumnName="threshold3-end" />
+                <ScalarProperty Name="threshold4start" ColumnName="threshold4-start" />
+                <ScalarProperty Name="threshold4end" ColumnName="threshold4-end" />
+                <ScalarProperty Name="threshold5start" ColumnName="threshold5-start" />
+                <ScalarProperty Name="threshold5end" ColumnName="threshold5-end" />
+                <ScalarProperty Name="threshold6start" ColumnName="threshold6-start" />
+                <ScalarProperty Name="rebate64" ColumnName="rebate64" />
+                <ScalarProperty Name="rebate6574" ColumnName="rebate65-74" />
+                <ScalarProperty Name="rebate75" ColumnName="rebate75" />
+                <ScalarProperty Name="taxthreshold64" ColumnName="taxthreshold64" />
+                <ScalarProperty Name="taxthreshold6574" ColumnName="taxthreshold65-74" />
+                <ScalarProperty Name="taxthreshold75" ColumnName="taxthreshold75" />
+                <ScalarProperty Name="medaidprincipal" ColumnName="medaid-principal" />
+                <ScalarProperty Name="medaidfirstdep" ColumnName="medaid-firstdep" />
+                <ScalarProperty Name="medaidsubsdep" ColumnName="medaid-subsdep" />
+                <ScalarProperty Name="calc1base" ColumnName="calc1-base" />
+                <ScalarProperty Name="calc1rate" ColumnName="calc1-rate" />
+                <ScalarProperty Name="calc1threshold" ColumnName="calc1-threshold" />
+                <ScalarProperty Name="calc2base" ColumnName="calc2-base" />
+                <ScalarProperty Name="calc2rate" ColumnName="calc2-rate" />
+                <ScalarProperty Name="calc2threshold" ColumnName="calc2-threshold" />
+                <ScalarProperty Name="calc3base" ColumnName="calc3-base" />
+                <ScalarProperty Name="calc3rate" ColumnName="calc3-rate" />
+                <ScalarProperty Name="calc3threshold" ColumnName="calc3-threshold" />
+                <ScalarProperty Name="calc4base" ColumnName="calc4-base" />
+                <ScalarProperty Name="calc4rate" ColumnName="calc4-rate" />
+                <ScalarProperty Name="calc4threshold" ColumnName="calc4-threshold" />
+                <ScalarProperty Name="calc5base" ColumnName="calc5-base" />
+                <ScalarProperty Name="calc5rate" ColumnName="calc5-rate" />
+                <ScalarProperty Name="calc5threshold" ColumnName="calc5-threshold" />
+                <ScalarProperty Name="calc6base" ColumnName="calc6-base" />
+                <ScalarProperty Name="calc6rate" ColumnName="calc6-rate" />
+                <ScalarProperty Name="calc6threshold" ColumnName="calc6-threshold" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Options">
+            <EntityTypeMapping TypeName="mainModel.Options">
+              <MappingFragment StoreEntitySet="Options">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="current_month" ColumnName="current_month" />
+                <ScalarProperty Name="pay_date" ColumnName="pay_date" />
+                <ScalarProperty Name="tax_year_start" ColumnName="tax_year_start" />
+                <ScalarProperty Name="tax_year_end" ColumnName="tax_year_end" />
+                <ScalarProperty Name="pay_cycle" ColumnName="pay_cycle" />
+                <ScalarProperty Name="days_per_cycle" ColumnName="days_per_cycle" />
+                <ScalarProperty Name="hours_per_cycle" ColumnName="hours_per_cycle" />
+                <ScalarProperty Name="pay_week_ending" ColumnName="pay_week_ending" />
+                <ScalarProperty Name="annualised_tax" ColumnName="annualised_tax" />
+                <ScalarProperty Name="shifts_per_year" ColumnName="shifts_per_year" />
+                <ScalarProperty Name="stamps_per_cycle" ColumnName="stamps_per_cycle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <edmx:Diagrams>
+      <Diagram Name="Main" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
